@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="All Tool AI" />
+  <link rel="canonical" href="https://www.alltoolai.com/watermark-pdf" />
+
+  <title>Add Watermark to PDF (Text or Image) Free, Private, No Uploads | AllToolAI</title>
+  <meta name="description" content="Add text or image watermarks to your PDFs directly in your browser. 100% client side (no uploads), secure, free, and unlimited. Set opacity, rotation, position, and page ranges. Works on any device." />
+  <meta name="keywords" content="add watermark to pdf, watermark pdf, pdf watermark tool, text watermark, image watermark, offline pdf watermark, client-side pdf tool, secure pdf editor, pdf-lib watermark, rotate watermark, opacity watermark, apply watermark to pages" />
+  <meta name="robots" content="index, follow, max-snippet, max-image-preview">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Add Watermark to PDF Free, Private, No Uploads" />
+  <meta property="og:description" content="Fast, secure, and free PDF watermark tool. Add text or image watermarks entirely in your browser. Private by design no server uploads." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.alltoolai.com/watermark-pdf" />
+  <meta property="og:image" content="https://www.alltoolai.com/assets/og/watermark-pdf-1200x630.png" />
+  <meta property="og:image:alt" content="Add watermark to PDF in your browser text or image watermark with rotation, opacity, and page ranges." />
+  <meta property="og:site_name" content="AllToolAI" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Add Watermark to PDF Free, Private, No Uploads" />
+  <meta name="twitter:description" content="Add text or image watermarks to PDFs locally in your browser secure, unlimited, and free." />
+  <meta name="twitter:image" content="https://www.alltoolai.com/assets/og/watermark-pdf-1200x630.png" />
+
+  <!-- Hreflang (only include locales you actually have live) -->
+  <link rel="alternate" hreflang="x-default" href="https://www.alltoolai.com/watermark-pdf" />
+  <link rel="alternate" hreflang="en" href="https://www.alltoolai.com/watermark-pdf" />
+      
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://www.alltoolai.com/watermark-pdf#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alltoolai.com/" },
+        { "@type": "ListItem", "position": 2, "name": "PDF Tools", "item": "https://www.alltoolai.com/pdf-tools" },
+        { "@type": "ListItem", "position": 3, "name": "Watermark PDF", "item": "https://www.alltoolai.com/watermark-pdf" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Watermark PDF AllToolAI",
+      "url": "https://www.alltoolai.com/watermark-pdf",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "en",
+      "description": "Add text or image watermarks to PDF files in your browser. 100% client-side, private, free, and unlimited. Control opacity, rotation, position, and target pages.",
+      "browserRequirements": "Requires a modern web browser",
+      "featureList": [
+        "Text or image watermark",
+        "Custom opacity and rotation",
+        "Apply to specific page ranges",
+        "Position presets (top, center, bottom; left, right)",
+        "Client-side only (no uploads)"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "AllToolAI",
+        "url": "https://www.alltoolai.com/"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it private and secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All processing happens locally in your browser. Your PDFs never leave your device, so it’s 100% private and secure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it free and unlimited?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It’s lifetime free and unlimited with no accounts, no paywalls, and no added watermarks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add both text and image watermarks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Choose Text to add custom text with font, size, color, opacity, and rotation. Choose Image to upload a PNG/JPG watermark with scaling, opacity, and rotation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I apply watermarks to specific pages only?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Use page ranges like “all”, “1,3-5,10” to target exactly where your watermark appears."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "After the first load, your browser can cache assets. The watermarking itself runs offline in your browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does watermarking protect PDFs from editing or copying?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Watermarks add visible marks but are not encryption or DRM. For sensitive content, also consider password-protecting or restricting your PDFs."
+          }
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Deferred scripts for functionality -->
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js" defer></script>
+
+  <!-- Non-blocking load for your Tailwind build -->
+  <link rel="preload" href="/assets/style/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/style/style.css" />
+    
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/pdf/pdf-ft.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+    
+  <style>
+    .color-link13{
+      color: oklch(54.6% 0.245 262.881);
+      font-weight: 750;
+    }
+  </style>
+  
+</head>
+<body class="bg-slate-200 font-sans text-slate-800 flex min-h-screen flex-col transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200">
+
+<div id="header-placeholder"></div>
+
+<main class="flex-grow w-full">
+    <div class="p-4 sm:p-6 mt-16 mx-auto">
+        <div class="mb-4">
+          <div id="topad-1" aria-label="Top Ad 1"></div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-[side_bar] lg:gap-4">
+
+            <div class="min-w-0 overflow-hidden">
+                <section class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-indigo-300 dark:bg-slate-800 dark:border-slate-700">
+                    <div class="text-center mb-8">
+                        <h1 class="p-1 text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Add Watermark to PDF</h1>
+                        <p class="mt-2 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400">A fast, private, and fully functional client-side tool to add watermarks.</p>
+                    </div>
+                    
+                    <!-- UPLOAD AREA -->
+                    <div id="upload-section" class="w-full max-w-2xl mx-auto space-y-6">
+                        <label for="pdf-upload" class="block text-center p-8 border-2 border-dashed border-slate-400 dark:border-slate-500 rounded-lg cursor-pointer transition-colors hover:border-indigo-600 dark:hover:border-indigo-300 bg-slate-200 dark:bg-slate-900">
+                            <div class="flex flex-col items-center justify-center space-y-4">
+                                <p class="text-lg font-medium text-slate-700 dark:text-slate-300">Drag & drop your PDF file here</p>
+                                <span class="text-slate-500 text-lg font-medium dark:text-slate-400">or</span>
+                                <span class="bg-indigo-600 hover:bg-indigo-700 dark:bg-indigo-500 dark:hover:bg-indigo-600 text-white font-semibold py-2.5 px-5 rounded-md text-lg z-10">Select a PDF</span>
+                                <p class="flex items-center text-sm text-slate-500 dark:text-slate-400 pt-2">
+                                    <svg class="h-5 w-5 mr-1.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002 2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" /></svg>
+                                    100% secure. Files are processed locally and never uploaded.
+                                </p>
+                            </div>
+                        </label>
+                        <input type="file" id="pdf-upload" accept=".pdf" class="hidden">
+                        <p id="file-name" class="text-center font-semibold text-indigo-600 dark:text-indigo-400"></p>
+                    </div>
+
+                    <!-- EDITOR SECTION -->
+                    <div class="editor-section hidden mt-8 max-w-5xl mx-auto" id="editor-section">
+                        
+                        <!-- CONTROLS -->
+                        <div id="controls-area" class="controls-area space-y-6">
+                            <h2 class="text-2xl font-bold text-slate-800 dark:text-slate-100 border-b border-slate-300 dark:border-slate-600 pb-3">Watermark Settings</h2>
+                            
+                            <!-- Watermark Type -->
+                            <div class="control-group">
+                                <label class="block text-lg mb-2 font-medium text-slate-900 dark:text-slate-200">Watermark Type</label>
+                                <div class="flex p-1 bg-slate-200 dark:bg-slate-900 rounded-lg">
+                                    <button id="type-text-btn" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Text</button>
+                                    <button id="type-image-btn" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Image</button>
+                                </div>
+                            </div>
+
+                            <!-- Text Controls -->
+                            <div id="text-controls" class="space-y-4">
+                                <div class="control-group">
+                                    <label for="text-input" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Watermark Text</label>
+                                    <input type="text" id="text-input" value="CONFIDENTIAL" placeholder="Enter watermark text" class="mt-1 block w-full px-3 py-2 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-md text-base">
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label for="font-family" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Font Family</label>
+                                        <select id="font-family" class="mt-1 block w-full px-3 py-2 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-md text-base">
+                                            <option value="Helvetica">Arial / Helvetica</option>
+                                            <option value="TimesRoman">Times New Roman</option>
+                                            <option value="Courier">Courier</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="font-color" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Font Color</label>
+                                        <input type="color" id="font-color" value="#ff0000" class="mt-1 block w-full h-10 rounded-md border border-slate-300 dark:border-slate-600">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label for="font-size" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Font Size <span id="font-size-value" class="font-normal text-indigo-600 dark:text-indigo-400">72pt</span></label>
+                                    <input type="range" id="font-size" min="8" max="200" value="72" class="w-full h-2 bg-slate-200 dark:bg-slate-600 rounded-lg appearance-none cursor-pointer">
+                                </div>
+                            </div>
+
+                            <!-- Image Controls -->
+                            <div id="image-controls" class="hidden space-y-4">
+                                <div class="control-group">
+                                    <label for="image-upload" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Upload Watermark Image</label>
+                                    <input type="file" id="image-upload" accept="image/png, image/jpeg" class="mt-1 p-1 block w-full text-base text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100">
+                                    <img id="image-preview" alt="Image Preview" class="hidden mt-4 max-h-24 rounded-md border border-slate-300 dark:border-slate-600">
+                                </div>
+                            </div>
+                            
+                            <hr class="border-slate-300 dark:border-slate-600">
+
+                            <!-- Common Controls -->
+                            <div class="space-y-4">
+                                <div class="control-group">
+                                    <label for="opacity" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Opacity <span id="opacity-value" class="font-normal text-indigo-600 dark:text-indigo-400">.5</span></label>
+                                    <input type="range" id="opacity" min="0" max="1" step=".05" value=".5" class="w-full h-2 bg-slate-200 dark:bg-slate-600 rounded-lg appearance-none cursor-pointer">
+                                </div>
+                                <div class="control-group">
+                                    <label for="rotation" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Rotation <span id="rotation-value" class="font-normal text-indigo-600 dark:text-indigo-400">-45°</span></label>
+                                    <input type="range" id="rotation" min="-180" max="180" value="-45" class="w-full h-2 bg-slate-200 dark:bg-slate-600 rounded-lg appearance-none cursor-pointer">
+                                </div>
+                                <div class="control-group">
+                                    <label for="pages" class="block text-lg font-bold text-slate-700 dark:text-slate-300">Apply to Pages</label>
+                                    <input type="text" id="pages" value="all" placeholder="e.g., all, 1, 3-5, 10" class="mt-1 block w-full px-3 py-2 bg-white dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-md text-base placeholder-slate-400">
+                                </div>
+                                <div class="control-group">
+                                    <label class="block text-lg font-bold text-slate-700 dark:text-slate-300">Position</label>
+                                    <div class="position-grid grid grid-cols-3 gap-2 mt-1">
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="top-left" title="Top-Left">↖️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="top-center" title="Top-Center">⬆️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="top-right" title="Top-Right">↗️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="center-left" title="Center-Left">⬅️</button>
+                                        <button class="active p-2 text-xl border-2 bg-slate-200 dark:bg-slate-700 hover:border-indigo-500 dark:hover:border-indigo-400 rounded-md" data-position="center" title="Center">↔️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="center-right" title="Center-Right">➡️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="bottom-left" title="Bottom-Left">↙️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="bottom-center" title="Bottom-Center">⬇️</button>
+                                        <button class="p-2 text-xl bg-slate-200 dark:bg-slate-700 border-2 border-slate-300 dark:border-slate-600 rounded-md hover:border-indigo-500 dark:hover:border-indigo-400" data-position="bottom-right" title="Bottom-Right">↘️</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- ACTION BUTTONS -->
+                            <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                                <button id="download-btn" class="w-full sm:w-auto flex-grow text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-lg px-5 py-3 transition-all dark:bg-indigo-500 dark:hover:bg-indigo-600 disabled:bg-slate-400 dark:disabled:bg-slate-600" disabled>Apply & Download</button>
+                                <button id="reset-btn" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold rounded-lg text-base px-5 py-3 transition-colors dark:bg-slate-600 dark:hover:bg-slate-500 dark:text-slate-200" disabled>Start Over</button>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <label class="text-lg">Live Preview:</label>
+                            <div id="preview" class="w-full flex justify-center items-center" style="min-height: 80vh;"><p>Upload a PDF to get started.</p></div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="my-4">
+                  <div id="midad-1" aria-label="Mid Ad 1"></div>
+                </div>
+
+                <div class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+                  
+                <!-- Intro -->
+                <section class="mb-8">
+                  <h2 class="text-3xl font-bold mb-6">Fast, Free, Private PDF Watermark (Offline)</h2>
+                  <p class="text-lg font-medium">
+                    Add text or image watermarks to your PDFs securely in your browser. 100% client side, lifetime free, and unlimited. No uploads, no tracking, truly private.
+                  </p>
+                  <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">
+                    Top, fast, best-in-class, and unlimited. Your information is 100% confidential and secure.
+                  </p>
+                </section>
+
+                <!-- Why people love it -->
+                <section class="mb-10">
+                  <h3 class="text-2xl font-semibold mb-4">Why people love this PDF watermark tool</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-left">
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Offline & secure</h4>
+                      <p>Runs entirely in your browser. Your files never leave your device.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Unlimited & free forever</h4>
+                      <p>No accounts, no limits watermark as much as you want.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Text or image watermark</h4>
+                      <p>Use custom text or upload a PNG/JPG logo or stamp.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Full control</h4>
+                      <p>Adjust opacity, rotation, size, position, and page ranges.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Works everywhere</h4>
+                      <p>Modern browsers on Windows, Mac, Linux, and mobile devices.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Live preview</h4>
+                      <p>See your watermark before you download no surprises.</p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Popular uses -->
+                <section class="mb-10">
+                  <h3 class="text-2xl font-semibold mb-4">Popular uses worldwide</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Drafts & confidential docs</h4>
+                      <p>Mark documents as “DRAFT” or “CONFIDENTIAL” before sharing.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Branding & ownership</h4>
+                      <p>Add your logo or company name to deter misuse.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Invoices & reports</h4>
+                      <p>Stamp “PAID,” “COPY,” or “SAMPLE” to keep files organized.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Education & training</h4>
+                      <p>Watermark handouts or sample exams to prevent redistribution.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Design & proofs</h4>
+                      <p>Share “PROOF ONLY” or low opacity logos over draft designs.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">HR & compliance</h4>
+                      <p>Mark internal documents with visibility labels.</p>
+                    </div>
+                  </div>
+                </section>
+
+                  <div class="my-4">
+                    <div id="midad-2" aria-label="Mid Ad 2"></div>
+                  </div>
+
+                <!-- How-to -->
+                <section class="mb-10 text-left">
+                  <h3 class="text-2xl font-semibold mb-4">How to add a watermark to a PDF</h3>
+                  <ol class="list-decimal pl-5 space-y-2">
+                    <li>Upload your PDF (drag & drop or select file).</li>
+                    <li>Choose Text or Image and customize options (font, color, opacity, rotation).</li>
+                    <li>Select position and page ranges (e.g., all, 1, 3–5, 10).</li>
+                    <li>Preview the result and click “Apply & Download”.</li>
+                    <li>All processing is local your data stays private.</li>
+                  </ol>
+                  <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">
+                    Tip: Use low opacity (e.g., 0.2–0.4) for subtle, professional watermarks.
+                  </p>
+                </section>
+
+                <!-- Best practices -->
+                <section class="mb-10 text-left">
+                  <h3 class="text-2xl font-semibold mb-4">Best practices</h3>
+                  <ul class="list-disc pl-5 space-y-2">
+                    <li>Pick high contrast color or strategic placement for readability.</li>
+                    <li>Use rotation (e.g., 30–45°) to make removal harder.</li>
+                    <li>Apply to specific pages (e.g., first/last) to keep files tidy.</li>
+                    <li>Save a clean original as a backup.</li>
+                    <li>For sensitive content, also use PDF password protection.</li>
+                  </ul>
+                </section>
+
+                <!-- GEO + multilingual synonyms -->
+                <section class="mb-10">
+                  <h3 class="text-2xl font-semibold mb-4">Global availability (GEO)</h3>
+                  <p class="text-lg">
+                    Built for users worldwide: USA, UK, Canada, Australia, India, EU (Germany, France, Spain, Italy, Netherlands), Middle East (UAE, Saudi Arabia), Asia (Singapore, Malaysia, Philippines, Indonesia, Japan, South Korea), Africa (Nigeria, South Africa, Egypt), and Latin America (Brazil, Mexico, Argentina). If your browser works, our watermark tool works.
+                  </p>
+                  <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">
+                    Also searched as: add watermark to PDF, watermark PDF, PDF watermark tool, add text watermark, add image watermark, 
+                    añadir marca de agua a PDF, watermark PDF online gratis, 
+                    ajouter un filigrane PDF, 
+                    Wasserzeichen zu PDF hinzufügen, 
+                    aggiungi filigrana PDF, 
+                    adicionar marca d’água em PDF, 
+                    добавить водяной знак в PDF, 
+                    给PDF添加水印, 
+                    PDF にウォーターマークを追加, 
+                    PDF에 워터마크 추가, 
+                    tambahkan watermark ke PDF, 
+                    PDF’ye filigran ekle, 
+                    dodaj znak wodny do PDF, 
+                    voegt watermerk toe aan PDF, 
+                    thêm watermark vào PDF, 
+                    เพิ่มลายน้ำใน PDF, 
+                    أضف علامة مائية إلى PDF.
+                  </p>
+                </section>
+
+                  <div class="my-4">
+                    <div id="midad-3" aria-label="Mid Ad 3"></div>
+                  </div>
+
+                <!-- FAQ -->
+                <section class="mb-10 text-left">
+                  <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Is it private and secure?</h4>
+                      <p>Yes. Everything runs locally in your browser no uploads or tracking.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Is it really free and unlimited?</h4>
+                      <p>Yes. Lifetime free and unlimited no sign ups or added watermarks.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Can I choose where the watermark appears?</h4>
+                      <p>Yes use the position grid (top/center/bottom + left/right) and rotation.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Can I pick specific pages?</h4>
+                      <p>Yes enter ranges like “all”, “1,3-5,10”.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Does a watermark protect my PDF from editing?</h4>
+                      <p>Watermarks add a visible mark. For stronger protection, also use a password.</p>
+                    </div>
+                    <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                      <h4 class="text-lg font-semibold mb-2">Does it work offline?</h4>
+                      <p>Yes. After the first visit, your browser can cache assets for offline use.</p>
+                    </div>
+                  </div>
+                </section>
+
+                </div>
+            </div>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
+              <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
+              <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
+              <div id="sidead-7" aria-label="Sidebar Ad 7"></div>
+            </aside>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
+              <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
+              <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
+              <div id="sidead-8" aria-label="Sidebar Ad 8"></div>
+            </aside>
+        </div>
+
+        <div class="mb-4">
+          <div id="topad-2" aria-label="Top Ad 2"></div>
+        </div>
+
+        <section class="mb-10">
+          <h3 class="text-2xl text-center font-semibold mb-4">Explore more free pdf tools</h3>
+            <p class="text-lg text-center">
+              Try our other tools: 
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/text-to-pdf">Text to PDF</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/images-to-pdf">Images to PDF</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-to-jpg">PDF to JPG</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-to-png">PDF to PNG</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/merge-pdf">Merge PDF</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/resize-pdf">Resize/Compress PDF</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/rotate-pdf-pages">Rotate PDF Pages</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/rearrange-pdf-pages">Rearrange PDF Pages</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-extractor">PDF Extractor</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-split">PDF Split</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-pages-delete">PDF Pages Delete</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/add-pdf-page-numbers">Add PDF Page Numbers</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/watermark-pdf">Watermark to PDF</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-encrypt">PDF Encrypt</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/pdf-decrypt">PDF Decrypt</a>.
+            </p>
+          </section>
+
+    </div>
+</main>
+
+<!-- :: Footer PLACEHOLDER :: -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/pdf/watermark.js" defer></script>
+
+</body>
+</html>
