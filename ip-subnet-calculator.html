@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="All Tool AI" />
+  <link rel="canonical" href="https://www.alltoolai.com/ip-subnet-calculator" />
+
+  <!-- Core SEO -->
+  <title>IP Subnet Calculator (IPv4/CIDR) | Free, Fast, Private | AllToolAI</title>
+  <meta name="description" content="Free IP subnet calculator for IPv4/CIDR. Instantly get network & broadcast addresses, usable host range, subnet & wildcard masks, and binary. Fast, accurate, and private runs locally in your browser. Lifetime free & unlimited." />
+  <meta name="keywords" content="IP subnet calculator, subnet calculator, IPv4 calculator, CIDR calculator, CIDR to subnet mask, network address calculator, broadcast address, usable host range, wildcard mask calculator, subnetting practice, class A B C, /24 /23 /22, ccna subnet, firewall wildcard mask, VPC subnetting, network planning tool, USA UK India EU Australia Canada UAE Singapore" />
+  <meta name="robots" content="index, follow, max-snippet, max-image-preview" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="IP Subnet Calculator (IPv4/CIDR) | Free, Fast, Private | AllToolAI" />
+  <meta property="og:description" content="Calculate network/broadcast addresses, usable hosts, subnet & wildcard masks, and binary. Private by design processing happens locally. Lifetime free & unlimited." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.alltoolai.com/ip-subnet-calculator" />
+  <meta property="og:image" content="https://www.alltoolai.com/assets/images/og/ip-subnet-calculator.png" />
+  <meta property="og:site_name" content="AllToolAI" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IP Subnet Calculator (IPv4/CIDR) | Free, Fast, Private | AllToolAI" />
+  <meta name="twitter:description" content="Fast, accurate IPv4 subnet calculator. Network/broadcast, hosts, masks, binary runs locally, no data sent. Free & unlimited." />
+  <meta name="twitter:image" content="https://www.alltoolai.com/assets/images/og/ip-subnet-calculator.png" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="x-default" href="https://www.alltoolai.com/ip-subnet-calculator" />
+  <link rel="alternate" hreflang="en" href="https://www.alltoolai.com/ip-subnet-calculator" />
+
+  <!-- JSON-LD: Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://www.alltoolai.com/ip-subnet-calculator#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alltoolai.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Calculator Tools", "item": "https://www.alltoolai.com/calculator-tools" },
+      { "@type": "ListItem", "position": 3, "name": "IP Subnet Calculator", "item": "https://www.alltoolai.com/ip-subnet-calculator" }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "IP Subnet Calculator",
+    "url": "https://www.alltoolai.com/ip-subnet-calculator",
+    "applicationCategory": "DeveloperApplication, Utility",
+    "operatingSystem": "Web",
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Free IPv4 subnet calculator (CIDR). Instantly compute network & broadcast addresses, usable host range, subnet/wildcard masks, and binary representation. Private runs locally in your browser. Lifetime free & unlimited.",
+    "featureList": [
+      "CIDR to subnet mask converter",
+      "Network & broadcast address",
+      "Usable host range & host counts",
+      "Wildcard mask for ACLs/Firewalls",
+      "Binary/bitwise view",
+      "IP class & private/public detection"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "AllToolAI",
+      "url": "https://www.alltoolai.com"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (make sure matching FAQs exist on page) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type":"Question",
+        "name":"Is this IP subnet calculator free and private?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. It is lifetime free and unlimited. All calculations run locally in your browser your information is 100% confidential and secure."}
+      },
+      {
+        "@type":"Question",
+        "name":"What results does it provide?",
+        "acceptedAnswer":{"@type":"Answer","text":"It outputs network and broadcast addresses, usable host range, subnet and wildcard masks, binary representation, and IP class plus private/public detection."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does it support /31 and /32?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. /31 is treated as point-to-point (2 usable addresses). /32 denotes a single-host route."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can I use CIDR or dotted-decimal masks?",
+        "acceptedAnswer":{"@type":"Answer","text":"You can enter either format: /24 or 255.255.255.0 the tool converts both ways instantly."}
+      },
+      {
+        "@type":"Question",
+        "name":"Who is it for?",
+        "acceptedAnswer":{"@type":"Answer","text":"Network administrators, students (CCNA/CompTIA), DevOps/SRE, and anyone planning subnets for data centers or cloud (AWS/Azure/GCP VPC/VNet)."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Non-blocking load for your Tailwind build -->
+  <link rel="preload" href="/assets/style/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/style/style.css" />
+    
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/calculator/calculator-ft.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    .color-link9{
+      color: oklch(54.6% 0.245 262.881);
+      font-weight: 750;
+    }
+  </style>
+
+</head>
+<body class="bg-slate-200 font-sans text-slate-800 flex min-h-screen flex-col transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200">
+
+<div id="header-placeholder"></div>
+
+<main class="flex-grow w-full">
+    <div class="p-4 sm:p-6 mt-16 mx-auto">
+        <div class="mb-4">
+          <div id="topad-1" aria-label="Top Ad 1"></div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-[side_bar] lg:gap-4">
+
+            <div class="min-w-0 overflow-hidden">
+                <section class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-indigo-300 dark:bg-slate-800 dark:border-slate-700">
+                    <div class="text-center mb-8">
+                        <h1 class="p-1 text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">IP Subnet Calculator</h1>
+                        <p class="mt-4 max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-400">The essential tool for network administrators, students, and IT professionals. Quickly determine network configuration details from any IPv4 address and subnet mask. Eliminate errors and save time with our accurate, easy-to-use network calculator.</p>
+                    </div>
+                    <div class="w-full max-w-2xl mx-auto space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                            <div><label for="ip-address" class="block text-base font-semibold leading-6 text-slate-900 dark:text-slate-200">IPv4 Address</label><div class="mt-2"><input type="text" id="ip-address" placeholder="e.g., 192.168.1.100" class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200"></div></div>
+                            <div><label for="subnet-mask" class="block text-base font-semibold leading-6 text-slate-900 dark:text-slate-200">Subnet (CIDR or Mask) <span id="subnet-helper" class="text-xs text-slate-500"></span></label><div class="mt-2"><input type="text" id="subnet-mask" placeholder="e.g., /24 or 255.255.255.0" class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200"></div></div>
+                        </div>
+                        <div id="error-message-container" style="display: none;" class="text-center"><p id="error-message" class="text-sm font-medium text-red-600 dark:text-red-400"></p></div>
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2"><button id="calculate-btn" type="button" class="w-full sm:w-auto flex-grow text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-base px-5 py-3 transition-all dark:bg-indigo-500 dark:hover:bg-indigo-600">Calculate</button><button id="reset-btn" type="button" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold rounded-lg text-base px-5 py-3 transition-colors dark:bg-slate-600 dark:hover:bg-slate-500 dark:text-slate-200">Reset</button></div>
+                        <div id="results-container" style="display: none;" class="space-y-8 pt-4">
+                            <div class="bg-slate-100 dark:bg-slate-700 p-6 rounded-lg border border-indigo-300 space-y-4"><h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200 border-b border-indigo-300 pb-2">Host Information</h3><div id="host-info-results"></div></div>
+                            <div class="bg-slate-100 dark:bg-slate-700 p-6 rounded-lg border border-indigo-300 space-y-4"><h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200 border-b border-indigo-300 pb-2">Network Details</h3><div id="network-info-results"></div></div>
+                            <div class="bg-slate-100 dark:bg-slate-700 p-6 rounded-lg border border-indigo-300 space-y-4"><h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200 border-b border-indigo-300 pb-2">Binary Representation</h3><div id="binary-info-results"></div></div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+                  <section class="mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Fast, Free, Private IP Subnet Calculator</h2>
+                    <p class="text-lg font-medium">
+                      Calculate network address, broadcast address, usable host range, subnet mask, wildcard mask, and binary representation for any IPv4/CIDR.
+                      Top, Fast, Best and Lifetime Free Unlimited your information is 100% confidential and secure (processing happens locally in your browser).
+                    </p>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Why professionals love this subnet calculator</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Instant results</h4>
+                        <p>Get network/broadcast addresses and usable hosts in real time from any IPv4/CIDR input.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">CIDR ↔ Mask</h4>
+                        <p>Convert between CIDR and dotted-decimal subnet masks automatically.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Wildcard masks</h4>
+                        <p>Generate wildcard masks for ACLs and firewall rules (Cisco/Juniper).</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Binary view</h4>
+                        <p>See the bitwise binary of IP, mask, and network for easy subnetting practice.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Private by design</h4>
+                        <p>No uploads, no tracking. Everything runs locally on your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Mobile friendly</h4>
+                        <p>Optimized for Chrome, Edge, Firefox, and Safari on desktop and mobile.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Popular uses worldwide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Network design</h4>
+                        <p>Plan IPv4 subnets for offices, data centers, and on-prem networks with precise host counts.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Cloud VPC/VNet</h4>
+                        <p>Create clean subnets for AWS VPC, Azure VNet, and Google Cloud VPC deployments.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Security & ACLs</h4>
+                        <p>Get wildcard masks for firewall and router ACLs with confidence.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Education & Exams</h4>
+                        <p>Perfect for CCNA/CompTIA subnetting practice: classes, masks, and binary breakdowns.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Troubleshooting</h4>
+                        <p>Verify if an IP is private/public and confirm address ranges quickly.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Automation</h4>
+                        <p>Use predictable CIDR blocks while scripting or building infra-as-code.</p>
+                      </div>
+                    </div>
+                    <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">Note: Always follow your organization’s IP addressing policies and RFC guidelines.</p>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-2" aria-label="Mid Ad 2"></div>
+                  </div>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">How to use this tool</h3>
+                    <ol class="list-decimal pl-5 space-y-2">
+                      <li>Enter an IPv4 address (e.g., 192.168.1.100).</li>
+                      <li>Enter a subnet in CIDR (e.g., /24) or mask (e.g., 255.255.255.0) the tool converts both ways.</li>
+                      <li>Click “Calculate” to get network address, broadcast, usable host range, masks, and binary.</li>
+                    </ol>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Global availability (GEO)</h3>
+                    <p class="text-lg">
+                      Built for network engineers and students in the USA, UK, Canada, Australia, India, and across the EU (Germany, France, Spain, Italy, Netherlands), Middle East (UAE, Saudi Arabia), Asia (Singapore, Malaysia, Philippines, Indonesia, Japan, South Korea), Africa (Nigeria, South Africa, Egypt), and Latin America (Brazil, Mexico, Argentina). If your browser works, our IP subnet calculator works.
+                    </p>
+                  </section>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4">CIDR quick reference</h3>
+                    <div class="overflow-x-auto">
+                      <table class="min-w-full text-sm">
+                        <thead>
+                          <tr class="text-left border-b border-slate-300 dark:border-slate-700">
+                            <th class="py-2 pr-6">CIDR</th>
+                            <th class="py-2 pr-6">Subnet Mask</th>
+                            <th class="py-2 pr-6">Usable Hosts</th>
+                            <th class="py-2 pr-6">Wildcard</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+                          <tr><td class="py-2 pr-6">/24</td><td class="py-2 pr-6">255.255.255.0</td><td class="py-2 pr-6">254</td><td class="py-2 pr-6">0.0.0.255</td></tr>
+                          <tr><td class="py-2 pr-6">/25</td><td class="py-2 pr-6">255.255.255.128</td><td class="py-2 pr-6">126</td><td class="py-2 pr-6">0.0.0.127</td></tr>
+                          <tr><td class="py-2 pr-6">/26</td><td class="py-2 pr-6">255.255.255.192</td><td class="py-2 pr-6">62</td><td class="py-2 pr-6">0.0.0.63</td></tr>
+                          <tr><td class="py-2 pr-6">/27</td><td class="py-2 pr-6">255.255.255.224</td><td class="py-2 pr-6">30</td><td class="py-2 pr-6">0.0.0.31</td></tr>
+                          <tr><td class="py-2 pr-6">/28</td><td class="py-2 pr-6">255.255.255.240</td><td class="py-2 pr-6">14</td><td class="py-2 pr-6">0.0.0.15</td></tr>
+                          <tr><td class="py-2 pr-6">/29</td><td class="py-2 pr-6">255.255.255.248</td><td class="py-2 pr-6">6</td><td class="py-2 pr-6">0.0.0.7</td></tr>
+                          <tr><td class="py-2 pr-6">/30</td><td class="py-2 pr-6">255.255.255.252</td><td class="py-2 pr-6">2</td><td class="py-2 pr-6">0.0.0.3</td></tr>
+                          <tr><td class="py-2 pr-6">/31</td><td class="py-2 pr-6">255.255.255.254</td><td class="py-2 pr-6">2 (point-to-point)</td><td class="py-2 pr-6">0.0.0.1</td></tr>
+                          <tr><td class="py-2 pr-6">/32</td><td class="py-2 pr-6">255.255.255.255</td><td class="py-2 pr-6">1 (host route)</td><td class="py-2 pr-6">0.0.0.0</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-3" aria-label="Mid Ad 3"></div>
+                  </div>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it private and secure?</h4>
+                        <p>Yes. All calculations happen in your browser. Your data never leaves your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Which inputs are supported?</h4>
+                        <p>Enter IPv4 and CIDR (e.g., 10.0.0.1/24) or IPv4 with a mask (e.g., 10.0.0.1 and 255.255.255.0).</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">What is a wildcard mask?</h4>
+                        <p>It’s the inverse of the subnet mask. Commonly used for firewall/ACL match rules (e.g., 0.0.0.255 for /24).</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it really free forever?</h4>
+                        <p>Yes lifetime free and unlimited. No signup, no paywalls, no watermarks.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+            </div>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
+              <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
+              <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
+              <div id="sidead-7" aria-label="Sidebar Ad 7"></div>
+            </aside>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
+              <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
+              <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
+              <div id="sidead-8" aria-label="Sidebar Ad 8"></div>
+            </aside>
+        </div>
+
+        <div class="mb-4">
+          <div id="topad-2" aria-label="Top Ad 2"></div>
+        </div>
+
+        <section class="mb-10">
+          <h3 class="text-2xl text-center font-semibold mb-4">Explore more free calculator tools</h3>
+            <p class="text-lg text-center">
+              Try our other tools: 
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/fertilizer-calculator">Fertilizer Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/age-calculator">Age Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/calorie-calculator">Calorie Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmi-calculator">BMI Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmr-calculator">BMR Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/compound-interest-calculator">Compound Interest Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/loan-calculator">Loan Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/date-calculator">Date Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/ip-subnet-calculator">IP Subnet Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/percentage-calculator">Percentage Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/scientific-calculator">Scientific Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/math-equation-solver">Math Equation Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/algebra-solver">Algebra Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/trigonometry-calculator">Trigonometry Calculator</a>.
+           </p>
+        </section>
+
+    </div>
+</main>
+
+<!-- :: Footer PLACEHOLDER :: -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/calculator/ip.js" defer></script>
+
+</body>
+</html>

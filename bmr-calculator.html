@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="All Tool AI" />
+  <link rel="canonical" href="https://www.alltoolai.com/bmr-calculator" />
+
+  <title>BMR, TDEE & Macro Calculator | Free Calorie & Macro Planner</title>
+  <meta name="description" content="Calculate BMR, TDEE, and macros instantly using the Mifflin–St Jeor formula. Get calories for weight loss, maintenance, or muscle gain with a full macro breakdown. Free and privacy-first." />
+  <meta name="keywords" content="BMR calculator, TDEE calculator, macro calculator, calorie calculator, maintenance calories, daily calorie needs, basal metabolic rate, total daily energy expenditure, protein calculator, carb calculator, fat calculator, weight loss calories, muscle gain calories, Mifflin St Jeor, Harris Benedict, free nutrition calculator, low carb macros, high protein macros, gym nutrition, fitness calculator, nutrition planner, USA UK Canada Australia India EU" />
+  <meta name="robots" content="index, follow, max-snippet, max-image-preview" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BMR, TDEE & Macro Calculator: Free Calorie & Macro Planner" />
+  <meta property="og:description" content="Instantly compute your maintenance calories and target macros for fat loss or muscle gain. Accurate, free, and private." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.alltoolai.com/bmr-calculator" />
+  <meta property="og:image" content="https://www.alltoolai.com/og/bmr-tdee-calculator-1200x630.png" />
+  <meta property="og:image:alt" content="BMR, TDEE & Macro Calculator by All Tool AI" />
+  <meta property="og:site_name" content="All Tool AI" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BMR, TDEE & Macro Calculator: Free Calorie & Macro Planner" />
+  <meta name="twitter:description" content="Get BMR, TDEE, and macros for weight loss or muscle gain. Free, fast, and privacy-first." />
+  <meta name="twitter:image" content="https://www.alltoolai.com/og/bmr-tdee-calculator-1200x630.png" />
+  <meta name="twitter:image:alt" content="BMR, TDEE & Macro Calculator by All Tool AI" />
+  <meta name="twitter:site" content="@alltoolai" />
+
+  <!-- Hreflang (expand as you localize) -->
+  <link rel="alternate" hreflang="x-default" href="https://www.alltoolai.com/bmr-calculator" />
+  <link rel="alternate" hreflang="en" href="https://www.alltoolai.com/bmr-calculator" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.alltoolai.com/#org",
+        "name": "All Tool AI",
+        "url": "https://www.alltoolai.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.alltoolai.com/assets/svg/logo.svg"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.alltoolai.com/#website",
+        "url": "https://www.alltoolai.com/",
+        "name": "All Tool AI",
+        "publisher": { "@id": "https://www.alltoolai.com/#org" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.alltoolai.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.alltoolai.com/bmr-calculator#webpage",
+        "url": "https://www.alltoolai.com/bmr-calculator",
+        "name": "BMR, TDEE & Macro Calculator: Free Calorie & Macro Planner",
+        "description": "Calculate BMR, TDEE, and macronutrients instantly using Mifflin–St Jeor. Set calories for weight loss, maintenance, or muscle gain with macro breakdowns.",
+        "isPartOf": { "@id": "https://www.alltoolai.com/#website" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://www.alltoolai.com/og/bmr-tdee-calculator-1200x630.png"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.alltoolai.com/bmr-calculator#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alltoolai.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Calculator Tools", "item": "https://www.alltoolai.com/calculator-tools" },
+          { "@type": "ListItem", "position": 3, "name": "BMR, TDEE & Macro Calculator", "item": "https://www.alltoolai.com/bmr-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://www.alltoolai.com/bmr-calculator#app",
+        "name": "BMR, TDEE & Macro Calculator",
+        "url": "https://www.alltoolai.com/bmr-calculator",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": [
+          "BMR calculator (Mifflin–St Jeor)",
+          "TDEE calculator (activity multipliers)",
+          "Macro targets for weight loss, maintenance, and gain",
+          "Diet presets: Balanced, Low Carb, High Protein",
+          "Metric & imperial units",
+          "Privacy-first (local processing)"
+        ],
+        "publisher": { "@id": "https://www.alltoolai.com/#org" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.alltoolai.com/bmr-calculator#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which BMR formula do you use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We use the Mifflin–St Jeor equation, widely regarded as the most accurate for estimating resting energy needs in adults."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is TDEE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TDEE (Total Daily Energy Expenditure) is your daily calorie burn including activity. It’s calculated by multiplying your BMR by an activity factor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are my results private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. All calculations run locally in your browser. We do not upload your entries or store them on a server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What macro split should I choose?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Balanced (30% protein, 40% carbs, 30% fat) suits most people. Low Carb (40% protein, 25% carbs, 35% fat) can help some with appetite control. High Protein (40/30/30) supports muscle retention. Choose the one that fits your goals and preferences."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this medical advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This tool is for education and planning only. Consult a healthcare professional for personalized advice."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Non-blocking load for your Tailwind build -->
+  <link rel="preload" href="/assets/style/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/style/style.css" />
+    
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/calculator/calculator-ft.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+    <style>
+    .color-link5{
+      color: oklch(54.6% 0.245 262.881);
+      font-weight: 750;
+    }      
+        .unit-toggle-btn { background-color: #fff; border: 1px solid oklch(78.5% 0.115 274.713); border-radius: 0.5rem; color: #334155; cursor: pointer; font-weight: 600; padding: 0.625rem 1.25rem; text-align: center; transition: all 0.2s ease-in-out; width: 100%; }
+        .unit-toggle-btn.active { background-color: #4f46e5; color: #fff; }
+        html.dark .unit-toggle-btn { background-color: #1e293b; color: #cbd5e1; }
+        html.dark .unit-toggle-btn.active { background-color: #4f46e5; }
+    </style>
+    
+</head>
+
+<body class="bg-slate-200 font-sans text-slate-800 flex min-h-screen flex-col transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200">
+
+<!-- :: HEADER PLACEHOLDER :: -->
+<div id="header-placeholder"></div>
+
+<main class="flex-grow w-full">
+    <div class="p-4 sm:p-6 mt-16 mx-auto">
+        <!-- START: Top Horizontal Ad Section -->
+        <div id="topad-1" aria-label="Top Ad 1"></div>
+        <!-- END: Top Horizontal Ad Section -->
+
+        <div class="lg:grid lg:grid-cols-[side_bar] lg:gap-4">
+
+            <div class="min-w-0" id="bmr-calculator">
+                <section class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-indigo-300 dark:bg-slate-800 dark:border-slate-700">
+                    <div class="text-center mb-8">
+                        <h1 class="text-3xl lg:text-4xl font-extrabold p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">BMR, TDEE & Macro Calculator</h1>
+                        <p class="mt-2 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400">Your professional solution for planning nutrition and fitness goals. Get your calorie and macro targets in seconds.</p>
+                    </div>
+                    
+                    <div class="w-full max-w-4xl mx-auto space-y-6">
+                         <!-- UI Stickers from Calorie  Calc -->
+                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                             <div>
+                                <label class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Gender</label>
+                                <div class="flex p-1 bg-slate-200 dark:bg-slate-900 rounded-lg">
+                                    <button id="btn-male" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Male</button>
+                                    <button id="btn-female" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Female</button>
+                                </div>
+                            </div>
+                            <div>
+                               <label class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Units</label>
+                               <div class="flex p-1 bg-slate-200 dark:bg-slate-900 rounded-lg">
+                                   <button id="btn-metric" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Metric</button>
+                                   <button id="btn-imperial" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Imperial</button>
+                               </div>
+                           </div>
+                        </div>
+
+                        <!-- Input fields styled like Calorie  Calc -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
+                            <div>
+                                <label for="age" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Age</label>
+                                <input type="number" id="age" min="15" max="120" placeholder="e.g., 25" required class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                            </div>
+                            <div>
+                                <label for="weight" id="label-weight" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Weight (kg)</label>
+                                <input type="number" id="weight" min="1" placeholder="e.g., 70" required class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                            </div>
+                            <div>
+                               <div id="height-metric-container">
+                                    <label for="height-cm" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Height (cm)</label>
+                                    <input type="number" id="height-cm" min="1" placeholder="e.g., 180" required class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                               </div>
+                               <div id="height-imperial-container" style="display: none;">
+                                    <label class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Height (ft, in)</label>
+                                    <div class="flex gap-4">
+                                        <input type="number" id="height-ft" placeholder="ft" min="1" required class="block w-1/2 rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                        <input type="number" id="height-in" placeholder="in" min="0" max="11" class="block w-1/2 rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+
+                        <!-- BMR Calculator Specific Fields (styled to match) -->
+                        <div class="grid grid-cols-1">
+                            <div>
+                                <label for="activity" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Activity Level</label>
+                                <select id="activity" class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                    <option value="1.2">Sedentary (office job, little exercise)</option>
+                                    <option value="1.375">Lightly Active (light exercise 1-3 days/week)</option>
+                                    <option value="1.55" selected>Moderately Active (moderate exercise 3-5 days/week)</option>
+                                    <option value="1.725">Very Active (hard exercise 6-7 days a week)</option>
+                                    <option value="1.9">Super Active (physical job & hard exercise)</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Error Message and Buttons from Calorie  Calc -->
+                        <div id="error-message-container" class="text-center pt-2" style="display: none;">
+                            <p id="error-message-text" class="text-sm font-medium text-red-600 dark:text-red-400"></p>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <button id="btn-calculate" type="button" class="w-full sm:w-auto flex-grow text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-base px-5 py-3 transition-all dark:bg-indigo-500 dark:hover:bg-indigo-600">Calculate</button>
+                            <button id="btn-reset" type="button" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold rounded-lg text-base px-5 py-3 transition-colors dark:bg-slate-600 dark:hover:bg-slate-500 dark:text-slate-200">Reset</button>
+                        </div>
+                    </div>
+
+                    <!-- Results Section (Styled like Calorie  Calc) -->
+                    <div id="results-container" class="pt-8 mt-8 border-t border-slate-400 dark:border-slate-600" style="display: none;">
+                        <!-- Basic Results -->
+                        <div id="results-heading" class="text-center">
+                            <h2 class="text-3xl font-bold text-slate-800 dark:text-white">Your Baseline Results</h2>
+                            <p class="mt-2 text-lg text-slate-600 dark:text-slate-300">Using the Mifflin-St Jeor formula.</p>
+                        </div>
+                        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                            <div class="bg-slate-100 dark:bg-slate-900 p-4 rounded-lg text-center">
+                                <h3 class="font-semibold text-xl text-slate-800 dark:text-white">Basal Metabolic Rate (BMR)</h3>
+                                <p id="bmr-result" class="text-5xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-4"></p>
+                                <p class="text-base text-slate-500 dark:text-slate-300">Calories your body burns at rest.</p>
+                            </div>
+                            <div class="bg-slate-100 dark:bg-slate-900 p-4 rounded-lg text-center">
+                                <h3 class="font-semibold text-xl text-slate-800 dark:text-white">Daily Energy Expenditure (TDEE)</h3>
+                                <p id="tdee-result" class="text-5xl font-extrabold text-indigo-600 dark:text-indigo-400 mt-4"></p>
+                                <p class="text-base text-slate-500 dark:text-slate-300">Calories to maintain current weight.</p>
+                            </div>
+                        </div>
+
+                        <!-- Macronutrient & Goal Results -->
+                        <div class="pt-8 mt-8 border-t border-slate-400 dark:border-slate-600">
+                             <h2 class="text-2xl font-bold text-center text-slate-800 dark:text-white">Calorie & Macro Targets For Your Goals</h2>
+                             <div class="max-w-xl mx-auto mt-4">
+                                <label class="block text-lg text-center font-semibold text-slate-800 dark:text-slate-200">Choose a Diet Plan</label>
+                                <div class="mt-2 grid grid-cols-3 gap-4 mb-4">
+                                    <button id="macro-balanced" type="button" class="unit-toggle-btn text-lg">Balanced</button>
+                                    <button id="macro-low-carb" type="button" class="unit-toggle-btn text-lg">Low Carb</button>
+                                    <button id="macro-high-protein" type="button" class="unit-toggle-btn text-lg">High Protein</button>
+                                </div>
+                            </div>
+                            <div class="mt-6 overflow-x-auto">
+                                <table class="min-w-full text-center text-base">
+                                    <thead class="bg-slate-100 dark:bg-slate-900">
+                                        <tr>
+                                            <th class="p-2 font-semibold tracking-wider">Goal</th>
+                                            <th class="p-2 font-semibold text-indigo-600">Calories</th>
+                                            <th class="p-2 font-semibold text-green-500">Protein (g)</th>
+                                            <th class="p-2 font-semibold text-blue-500">Carbs (g)</th>
+                                            <th class="p-2 font-semibold text-red-500">Fat (g)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="goals-table-body" class="divide-y divide-slate-200 dark:divide-slate-800">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="my-4">
+                  <div id="midad-1" aria-label="Mid Ad 1"></div>
+                </div>
+
+                <div class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+
+                  <section class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+                    <h2 class="text-3xl font-bold mb-6">Fast, Free, Private BMR Calculator</h2>
+                    <p class="text-lg font-medium">
+                      Instantly calculate your Basal Metabolic Rate (BMR) and Total Daily Energy Expenditure (TDEE). See your maintenance calories and goal-based targets (calorie deficit or surplus), plus daily macros for protein, carbs, and fat. Top, fast, best and lifetime free unlimited your information is 100% confidential and secure (calculations run locally in your browser).
+                    </p>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Why people love this BMR calculator</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Metric & Imperial</h4>
+                        <p>Use kg/cm or lb/ft/in switch units anytime with automatic handling.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">TDEE & Maintenance Calories</h4>
+                        <p>Get your daily calorie needs using your selected activity level (1.2–1.9).</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Macros & Goals</h4>
+                        <p>Balanced, Low Carb, or High Protein macro splits see protein, carbs, and fat in grams for weight loss or muscle gain.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Private by Design</h4>
+                        <p>No signups, no tracking. Everything runs locally on your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Accurate BMR Formula</h4>
+                        <p>Uses the Mifflin–St Jeor equation a trusted method for adults.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Free & Mobile-Friendly</h4>
+                        <p>Lifetime free, no limits. Optimized for Chrome, Edge, Firefox, and Safari on desktop and mobile.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="mb-10 text-left">
+                    <h2 class="text-2xl font-bold mb-4">What are BMR, TDEE, and Macros?</h2>
+                    <p class="text-lg mb-3">
+                      BMR (Basal Metabolic Rate) is the calories your body burns at rest. TDEE (Total Daily Energy Expenditure) adds your daily activity to estimate the calories you need to maintain weight. Your macronutrients (protein, carbs, fat) are split from those calories to match goals like fat loss, maintenance, or muscle gain.
+                    </p>
+                    <h3 class="text-xl font-semibold mt-6 mb-2">How we calculate your numbers</h3>
+                    <ul class="list-disc pl-5">
+                      <li>BMR: Mifflin–St Jeor equation (more accurate for most adults).</li>
+                      <li>TDEE: BMR × activity level (sedentary to super active).</li>
+                      <li>Macros: Choose Balanced (30/40/30), Low Carb (40/25/35), or High Protein (40/30/30).</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mt-6 mb-2">Tips for better results</h3>
+                    <ul class="list-disc pl-5">
+                      <li>Pick the activity level that matches most days of your week.</li>
+                      <li>Recalculate after weight changes of 5–10 lb (2–5 kg) or routine changes.</li>
+                      <li>Use a modest calorie deficit (250–500 kcal/day) for sustainable fat loss.</li>
+                    </ul>
+
+                    <p class="mt-4 text-sm text-slate-600 dark:text-slate-400">
+                      Disclaimer: This calculator is for educational purposes and is not medical advice. Talk to a qualified professional for personalized guidance.
+                    </p>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-2" aria-label="Mid Ad 2"></div>
+                  </div>
+
+                  <section id="how-to-bmi" class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4">How to calculate your BMI</h3>
+                    <ol class="list-decimal pl-5 space-y-2">
+                      <li>Choose units: Metric (kg/cm) or Imperial (lb/ft/in).</li>
+                      <li>Measure your height and weight accurately (ideally the same day/time).</li>
+                      <li>Apply the formula for your unit system:
+                        <ul class="list-disc pl-6 mt-2">
+                          <li>Metric: BMI = weight (kg) / [height (m)]²</li>
+                          <li>Imperial: BMI = 703 × weight (lb) / [height (in)]²</li>
+                        </ul>
+                      </li>
+                      <li>Interpret the result (adults 20+):
+                        <ul class="list-disc pl-6 mt-2">
+                          <li>Underweight: &lt; 18.5</li>
+                          <li>Healthy weight: 18.5–24.9</li>
+                          <li>Overweight: 25–29.9</li>
+                          <li>Obesity: ≥ 30</li>
+                        </ul>
+                      </li>
+                    </ol>
+                    <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">
+                      Tip: For a healthy weight range, reverse the formula using your height: min = 18.5 × height(m)², max = 24.9 × height(m)².
+                      Note: BMI is a screening tool and may not reflect body composition for athletes, pregnant people, or all body types.
+                    </p>
+                  </section>
+
+                  <section id="popular-uses" class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Popular uses worldwide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Fitness & Wellness</h4>
+                        <p>Plan calorie targets with BMR/TDEE, track macros, and monitor progress for fat loss or muscle gain.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Telehealth & Clinics</h4>
+                        <p>Quick energy needs and BMI screening for remote consultations and health checkups.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Schools & Universities</h4>
+                        <p>Teach energy balance, nutrition basics, and healthy lifestyle principles.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Research & Surveys</h4>
+                        <p>Standardized metrics (BMR/TDEE/BMI) for population health studies and cohorts.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Insurance & HR</h4>
+                        <p>General screening and wellness programs where permitted by local policy and regulations.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Personal Health</h4>
+                        <p>Estimate maintenance calories, set a safe calorie deficit, and get a quick BMI snapshot.</p>
+                      </div>
+                    </div>
+                    <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">
+                      Available globally: USA, UK, Canada, Australia, India, EU, Middle East, Asia, Africa, and Latin America. Works with metric and imperial units.
+                    </p>
+                  </section>
+
+                  <section class="mb-10 text-left">
+                    <h2 class="text-2xl font-semibold mb-3">Global availability</h2>
+                    <p class="text-lg">Works worldwide with metric (kg/cm) and imperial (lb/ft/in) units. Popular in the USA, UK, Canada, Australia, India, EU, Singapore, Malaysia, Philippines, Indonesia, UAE, Saudi Arabia, South Africa, Nigeria, Egypt, Brazil, Mexico, and Argentina.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400 mt-2">Fast, free, and private all calculations run locally in your browser.</p>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-3" aria-label="Mid Ad 3"></div>
+                  </div>
+
+                  <section id="faq" class="mb-10 text-left">
+                    <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Which BMR formula do you use?</h4>
+                        <p>We use the Mifflin–St Jeor equation, widely regarded as most accurate for estimating resting energy needs in adults.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">What is TDEE?</h4>
+                        <p>TDEE (Total Daily Energy Expenditure) is your daily calorie burn including activity. It’s calculated as BMR × an activity multiplier.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Which units can I use?</h4>
+                        <p>Both metric (kg/cm) and imperial (lb/ft/in). Switch units any time and the calculator adjusts fields accordingly.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Are my results private and secure?</h4>
+                        <p>Yes. All calculations run locally in your browser. Your data never leaves your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">What macro split should I choose?</h4>
+                        <p>Balanced (30% protein, 40% carbs, 30% fat) suits most people. Low Carb (40/25/35) may help appetite control. High Protein (40/30/30) supports muscle retention. Pick what you can stick to.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">How often should I recalculate?</h4>
+                        <p>Recalculate after weight changes of ~2–5 kg (5–10 lb), when your activity level changes, or every 4–6 weeks during a program.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">What is a healthy BMI?</h4>
+                        <p>For most adults, 18.5–24.9. BMI is a screening tool and doesn’t capture body composition; consider waist and strength metrics too.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is this medical advice?</h4>
+                        <p>No. These tools are for education and planning. For diagnosis or treatment, consult a qualified healthcare professional.</p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+            </div>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
+              <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
+              <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
+              <div id="sidead-7" aria-label="Sidebar Ad 7"></div>
+            </aside>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
+              <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
+              <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
+              <div id="sidead-8" aria-label="Sidebar Ad 8"></div>
+            </aside>
+        </div>
+
+        <div class="mb-4">
+          <div id="topad-2" aria-label="Top Ad 2"></div>
+        </div>
+
+        <section class="mb-10">
+          <h3 class="text-2xl text-center font-semibold mb-4">Explore more free calculator tools</h3>
+            <p class="text-lg text-center">
+              Try our other tools: 
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/fertilizer-calculator">Fertilizer Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/age-calculator">Age Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/calorie-calculator">Calorie Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmi-calculator">BMI Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmr-calculator">BMR Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/compound-interest-calculator">Compound Interest Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/loan-calculator">Loan Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/date-calculator">Date Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/ip-subnet-calculator">IP Subnet Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/percentage-calculator">Percentage Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/scientific-calculator">Scientific Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/math-equation-solver">Math Equation Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/algebra-solver">Algebra Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/trigonometry-calculator">Trigonometry Calculator</a>.
+           </p>
+        </section>
+
+    </div>
+</main>
+
+<!-- :: Footer PLACEHOLDER :: -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/calculator/bmr.js" defer></script>
+
+</body>
+</html>

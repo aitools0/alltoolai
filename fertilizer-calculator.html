@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="All Tool AI" />
+  <link rel="canonical" href="https://www.alltoolai.com/fertilizer-calculator" />
+
+  <!-- SEO -->
+  <title>Fertilizer Calculator NPK Rates, Costs, kg/ha ↔ lbs/acre</title>
+  <meta name="description" content="Fast, free fertilizer calculator for precise NPK planning. Set N‑P‑K targets, adjust for soil type, and instantly get Urea/DAP/MOP or custom blend rates, split applications, and costs in kg/ha or lbs/acre. Private runs in your browser.">
+  <meta name="keywords" content="fertilizer calculator, fertiliser calculator, NPK calculator, N-P-K calculator, crop nutrient calculator, urea dap mop calculator, nitrogen phosphorus potassium rates, kg/ha to lbs/acre, fertilizer cost calculator, custom blend fertilizer, split application nitrogen, top-dress urea, sandy clay loamy soils, P2O5 to P conversion, K2O to K conversion, corn maize, wheat, rice paddy, soybean, potato, free online, private, secure, USA, UK, India, Australia, Canada, EU">
+  <meta name="robots" content="index, follow, max-snippet, max-image-preview" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fertilizer Calculator NPK Rates, Costs, kg/ha ↔ lbs/acre">
+  <meta property="og:description" content="Set N‑P‑K targets, adjust for soil, compute Urea/DAP/MOP or custom blend rates, split applications, and costs. Free, fast, and private.">
+  <meta property="og:url" content="https://www.alltoolai.com/fertilizer-calculator">
+  <meta property="og:site_name" content="AllToolAI">
+  <meta property="og:image" content="https://www.alltoolai.com/assets/img/fertilizer-calculator-og.png"> <!-- 1200x630 recommended -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fertilizer Calculator NPK Rates, Costs, kg/ha ↔ lbs/acre">
+  <meta name="twitter:description" content="Fast, free, private fertilizer calculator for global users.">
+  <meta name="twitter:image" content="https://www.alltoolai.com/assets/img/fertilizer-calculator-og.png">
+
+    <!-- GEO/Hreflang (add more locales later if you localize) -->
+    <link rel="alternate" hreflang="x-default" href="https://www.alltoolai.com/fertilizer-calculator" />
+    <link rel="alternate" hreflang="en" href="https://www.alltoolai.com/fertilizer-calculator" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": "https://www.alltoolai.com/fertilizer-calculator#breadcrumb",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alltoolai.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Calculator Tools", "item": "https://www.alltoolai.com/calculator-tools" },
+      { "@type": "ListItem", "position": 3, "name": "Fertilizer Calculator", "item": "https://www.alltoolai.com/fertilizer-calculator" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Definitive Fertilizer Calculator",
+    "url": "https://www.alltoolai.com/fertilizer-calculator",
+    "inLanguage": "en",
+    "description": "Professional, free fertilizer calculator for global crops. Calculate N‑P‑K rates, split applications, and cost using Urea, DAP, MOP, or custom blends in kg/ha or lbs/acre.",
+    "isPartOf": { "@type": "WebSite", "name": "AllToolAI", "url": "https://www.alltoolai.com/" },
+    "breadcrumb": { "@id": "https://www.alltoolai.com/fertilizer-calculator#breadcrumb" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Definitive Fertilizer Calculator",
+    "url": "https://www.alltoolai.com/fertilizer-calculator",
+    "operatingSystem": "Web",
+    "applicationCategory": "BusinessApplication",
+    "softwareVersion": "2.0",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "N‑P‑K target planning",
+      "Soil-type adjustments (sandy, clay, loamy)",
+      "kg/ha and lbs/acre support",
+      "Split applications",
+      "Urea/DAP/MOP and custom blends",
+      "Live cost calculator",
+      "Local, private processing"
+    ],
+    "publisher": { "@type": "Organization", "name": "AllToolAI", "url": "https://www.alltoolai.com/" }
+  }
+  </script>
+
+  <!-- Replace your on-page FAQ with the content below and include this FAQ schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is this fertilizer calculator free and private?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. It is 100% free and your data stays on your device. All calculations run locally in your browser no signups, no tracking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it work in kg/ha and lbs/acre?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Toggle output units to view rates as kg/ha or lbs/acre and total amounts as kg or lbs. Field area supports hectares or acres."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What fertilizers are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Urea (46-0-0), DAP (18-46-0), MOP (0-0-60), plus custom N-P2O5-K2O blends. The calculator converts P to P2O5 and K to K2O automatically."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are soil types used?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sandy soils increase N and K demand due to leaching (+15%). Clay reduces N and increases P needs due to retention/fixation (-10% N, +10% P). Loamy is baseline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I split apply nitrogen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Enable Split Application to apply a percentage of N (typically top-dressed Urea) in a second pass. P and K are commonly applied at planting."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will this replace a soil test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Use recent soil tests and local agronomic guidance. This tool helps plan rates and costs, but local recommendations take priority."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Non-blocking load for your Tailwind build -->
+  <link rel="preload" href="/assets/style/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/style/style.css" />
+    
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/calculator/calculator-ft.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+    <style>
+    .color-link1{
+      color: oklch(54.6% 0.245 262.881);
+      font-weight: 750;
+    }      
+        .tooltip { position: relative; display: inline-block; cursor: help; border: 1px solid var(--slate-400); border-radius: 50%; width: 18px; height: 18px; font-size: 12px; text-align: center; line-height: 16px; color: var(--slate-600); margin-left: 4px; }
+        .tooltip .tooltip-text { visibility: hidden; width: 240px; background-color: var(--slate-800); color: #fff; text-align: left; border-radius: 6px; padding: 10px; position: absolute; z-index: 1; bottom: 135%; left: 50%; margin-left: -120px; opacity: 0; transition: opacity 0.3s; font-size: 0.85rem; font-weight: 400; }
+        .tooltip:hover .tooltip-text { visibility: visible; opacity: 1; }
+        #results-summary table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        #results-summary th, #results-summary td { padding: 0.75rem; text-align: left; border-bottom: 1px solid var(--color-slate-200); }
+        .dark #results-summary th, .dark #results-summary td { border-bottom-color: var(--color-slate-700); }
+        #results-summary th { background-color: var(--color-slate-200); font-weight: 600; }
+        .dark #results-summary th { background-color: var(--color-slate-700); }
+        #results-summary .total-row td { font-weight: 700; background-color: var(--color-indigo-100); }
+        .dark #results-summary .total-row td { background-color: var(--color-indigo-900); }
+        #results-summary .breakdown-row td { font-size: 1rem; color: var(--color-slate-600); padding-top: 2px; padding-bottom: 8px; border: none; }
+        .dark #results-summary .breakdown-row td { color: var(--color-slate-400); }
+    </style>
+
+</head>
+<body class="bg-slate-200 font-sans text-slate-800 flex min-h-screen flex-col transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200">
+
+<div id="header-placeholder"></div>
+
+<main class="flex-grow w-full">
+    <div class="p-4 sm:p-6 mt-16 mx-auto">
+        <div class="mb-4">
+          <div id="topad-1" aria-label="Top Ad 1"></div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-[side_bar] lg:gap-4">
+
+            <div class="min-w-0 overflow-hidden">
+                <section class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-indigo-300 dark:bg-slate-800 dark:border-slate-700">
+                    <div class="text-center mb-8">
+                        <h1 class="p-1 text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Definitive Fertilizer Calculator</h1>
+                        <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">For precise, professional crop nutrition and cost management.</p>
+                    </div>
+                    <div class="w-full max-w-4xl mx-auto space-y-6">
+                        <fieldset>
+                            <legend class="text-xl font-bold text-slate-900 dark:text-slate-200 mb-4 border-b border-indigo-300 dark:border-slate-700 pb-2">1. Field & Crop Inputs</legend>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="form-group">
+                                    <label for="crop-type" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Crop Type</label>
+                                    <select id="crop-type" class="mt-2 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200"></select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="soil-type" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Soil Type
+                                        <span class="tooltip">?
+                                            <span class="tooltip-text">Soil type adjusts nutrient requirements. <b>Sandy:</b> +15% N, +15% K (higher leaching). <b>Clay:</b> -10% N, +10% P (better retention/fixation). <b>Loamy:</b> Baseline.</span>
+                                        </span>
+                                    </label>
+                                    <select id="soil-type" class="mt-2 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                                        <option value="loamy" selected>Loamy</option>
+                                        <option value="sandy">Sandy</option>
+                                        <option value="clay">Clay</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4">
+                                <label for="field-size" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Field Size</label>
+                                <div class="mt-2 flex">
+                                    <input type="number" id="field-size" min="0.01" step="0.1" class="block w-full rounded-l-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                                    <select id="unit-switcher" class="rounded-r-md border-0 bg-slate-700 text-white px-3 dark:bg-slate-600">
+                                        <option value="hectare">Hectares</option>
+                                        <option value="acre">Acres</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="text-xl font-bold text-slate-900 dark:text-slate-200 mb-4 border-b border-indigo-300 dark:border-slate-700 pb-2">2. Nutrient Management</legend>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                <div class="form-group">
+                                    <label for="nitrogen" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Nitrogen (N) Target (kg/ha)</label>
+                                    <input type="number" id="nitrogen" min="0" class="mt-2 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phosphorus" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Phosphorus (P) Target (kg/ha)</label>
+                                    <input type="number" id="phosphorus" min="0" class="mt-2 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                                </div>
+                                <div class="form-group">
+                                    <label for="potassium" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Potassium (K) Target (kg/ha)</label>
+                                    <input type="number" id="potassium" min="0" class="mt-2 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="text-xl font-bold text-slate-900 dark:text-slate-200 mb-4 border-b border-indigo-300 dark:border-slate-700 pb-2">3. Split Application (Optional)</legend>
+                            <div class="form-group">
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="split-app-enable" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                    <span class="ml-2 text-sm text-slate-900 dark:text-slate-200">Enable Split Application</span>
+                                </label>
+                            </div>
+                            <div id="split-app-inputs" class="mt-4" style="display:none;">
+                                <label for="split-app-percentage" class="block text-sm font-medium leading-6 text-slate-900 dark:text-slate-200">Application 2 (Top-Dress) Percentage (%)
+                                    <span class="tooltip">?
+                                        <span class="tooltip-text">Specify the percentage of the TOTAL fertilizer recommendation to be applied in the second application. The first application will be the remainder. P & K are often applied 100% in the first application.</span>
+                                    </span>
+                                </label>
+                                <input type="number" id="split-app-percentage" min="0" max="100" step="1" disabled class="mt-2 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-slate-200">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend class="text-xl font-bold text-slate-900 dark:text-slate-200 mb-4 border-b border-indigo-300 dark:border-slate-700 pb-2">4. Fertilizer Sources & Costs</legend>
+                            <div class="form-group">
+                                <label class="flex items-center">
+                                    <input type="checkbox" id="custom-blend-enable" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+                                    <span class="ml-2 text-sm text-slate-900 dark:text-slate-200">Use a Custom Blended Fertilizer</span>
+                                </label>
+                            </div>
+                            <div id="custom-blend-inputs" class="mt-4 space-y-4" style="display:none;">
+                                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                    <div><label for="custom-n" class="block text-sm font-medium">N (%)</label><input type="number" id="custom-n" min="0" step="1" value="10" class="mt-1 block w-full rounded-md border-0 py-1.5 px-2 bg-slate-200 dark:bg-slate-700"></div>
+                                    <div><label for="custom-p" class="block text-sm font-medium">P₂O₅ (%)</label><input type="number" id="custom-p" min="0" step="1" value="10" class="mt-1 block w-full rounded-md border-0 py-1.5 px-2 bg-slate-200 dark:bg-slate-700"></div>
+                                    <div><label for="custom-k" class="block text-sm font-medium">K₂O (%)</label><input type="number" id="custom-k" min="0" step="1" value="10" class="mt-1 block w-full rounded-md border-0 py-1.5 px-2 bg-slate-200 dark:bg-slate-700"></div>
+                                    <div><label for="custom-price" class="block text-sm font-medium">Price/kg</label><input type="number" id="custom-price" min="0" step="0.01" value="0.8" class="mt-1 block w-full rounded-md border-0 py-1.5 px-2 bg-slate-200 dark:bg-slate-700"></div>
+                                </div>
+                                <div>
+                                    <label for="blend-strategy" class="block text-sm font-medium">Blend Application Strategy
+                                        <span class="tooltip">?
+                                            <span class="tooltip-text">Choose the key nutrient to base the blend's rate on. The calculator will then use straight fertilizers to balance the remaining needs.</span>
+                                        </span>
+                                    </label>
+                                    <select id="blend-strategy" class="mt-1 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 dark:bg-slate-700">
+                                        <option value="p-based">Meet Phosphorus Requirement First</option>
+                                        <option value="k-based">Meet Potassium Requirement First</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <p class="mt-6 mb-2 font-medium text-slate-900 dark:text-slate-200">Straight Fertilizer Prices (per kg)</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                                <div><label for="urea-price" class="block text-sm font-medium">Urea Price</label><input type="number" id="urea-price" min="0" step="0.01" class="mt-1 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 dark:bg-slate-700"></div>
+                                <div><label for="dap-price" class="block text-sm font-medium">DAP Price</label><input type="number" id="dap-price" min="0" step="0.01" class="mt-1 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 dark:bg-slate-700"></div>
+                                <div><label for="mop-price" class="block text-sm font-medium">MOP Price</label><input type="number" id="mop-price" min="0" step="0.01" class="mt-1 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 dark:bg-slate-700"></div>
+                            </div>
+
+                            <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="currency-symbol" class="block text-sm font-medium">Currency</label>
+                                    <input type="text" id="currency-symbol" value="$" class="mt-1 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 dark:bg-slate-700">
+                                </div>
+                                <div>
+                                    <label for="output-unit" class="block text-sm font-medium">Display Results In</label>
+                                    <select id="output-unit" class="mt-1 block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 dark:bg-slate-700">
+                                        <option value="kg">Kilograms (kg) & Hectares (ha)</option>
+                                        <option value="lbs">Pounds (lbs) & Acres (acre)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div id="calculate-section" class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <button id="calculate-btn" type="button" class="w-full sm:w-auto flex-grow text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-base px-5 py-3 transition-all dark:bg-indigo-500 dark:hover:bg-indigo-600">Calculate</button>
+                            <button id="reset-btn" type="button" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold rounded-lg text-base px-5 py-3 transition-colors dark:bg-slate-600 dark:hover:bg-slate-500 dark:text-slate-200">Reset</button>
+                        </div>
+
+                        <div id="results-section" class="space-y-8 pt-4 hidden scroll-mt-16">
+                            <h2 class="text-2xl font-bold text-center text-slate-800 dark:text-slate-200">Professional Recommendation</h2>
+                            <div id="results-summary"></div>
+                            <div id="advisory-note" class="bg-slate-100 border border-indigo-300 text-green-500 p-4 rounded-lg dark:bg-slate-900 dark:border-slate-700" style="display:none;"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="my-4">
+                  <div id="midad-1" aria-label="Mid Ad 1"></div>
+                </div>
+
+                <div class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+
+                  <section class="mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Fast, Free, Private Fertilizer Calculator</h2>
+                    <p class="text-lg font-medium">
+                      Calculate precise N‑P‑K fertilizer rates, split applications, and costs for crops worldwide.
+                      Top, fast, best, and lifetime free your information is 100% confidential and secure (processing is done locally in your browser).
+                    </p>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Why people love this fertilizer calculator</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Accurate N‑P‑K planning</h4>
+                        <p>Enter target nutrients and get exact Urea/DAP/MOP or custom blend rates in kg/ha or lbs/acre.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Soil-type adjustments</h4>
+                        <p>Account for sandy, clay, and loamy soils to optimize nutrient efficiency and reduce losses.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Split applications</h4>
+                        <p>Plan base and top-dress passes (e.g., N as Urea) to improve uptake and manage risk.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Cost calculator</h4>
+                        <p>Estimate total fertilizer needs and budget using local prices for Urea, DAP, MOP, or blends.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Crop presets</h4>
+                        <p>Start faster with presets for Corn/Maize, Wheat, Rice (Paddy), Potato, and Soybean.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Private by design</h4>
+                        <p>No uploads, no tracking everything runs locally on your device.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Popular uses worldwide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Farm nutrient planning</h4>
+                        <p>Balance N, P, and K by crop, soil, and field size; export in kg/ha or lbs/acre.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Input cost budgeting</h4>
+                        <p>Estimate fertilizer costs with local market prices and custom blends.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Extension & consulting</h4>
+                        <p>Create fast, consistent recommendations for growers and training programs.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Precision & VR planning</h4>
+                        <p>Support variable-rate scripts with clean N‑P‑K targets and split timing.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Education & labs</h4>
+                        <p>Demonstrate P2O5/K2O conversions and fertilizer math clearly.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Smallholders to enterprise</h4>
+                        <p>From backyard plots to large farms simple, fast, and accurate.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-2" aria-label="Mid Ad 2"></div>
+                  </div>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">How to calculate fertilizer rates</h3>
+                    <ol class="list-decimal pl-5 space-y-2">
+                      <li>Select your crop preset (or “Custom”), soil type, and field size (hectares or acres).</li>
+                      <li>Enter target N, P, and K (elemental) the tool converts P to P₂O₅ and K to K₂O automatically.</li>
+                      <li>Optional: enable Split Application to top-dress part of the N (often as Urea).</li>
+                      <li>Enter local prices for Urea, DAP, MOP, or define a custom blend and strategy (P‑based or K‑based).</li>
+                      <li>Click “Calculate” to get rates, total amounts, nutrient balance, and costs.</li>
+                    </ol>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Global availability (GEO)</h3>
+                    <p class="text-lg">
+                      Built for the USA, UK, Canada, Australia, India, the EU (Germany, France, Spain, Italy, Netherlands), Middle East (UAE, Saudi Arabia), Asia (Singapore, Malaysia, Philippines, Indonesia, Japan, South Korea), Africa (Nigeria, South Africa, Egypt), and Latin America (Brazil, Mexico, Argentina). Use hectares or acres, and view results in kg/ha or lbs/acre. English variants supported: fertilizer (US/CA) and fertiliser (UK/IN/AU).
+                    </p>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-3" aria-label="Mid Ad 3"></div>
+                  </div>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it private and secure?</h4>
+                        <p>Yes. Everything runs locally in your browser. Your data never leaves your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Elemental P vs P₂O₅? K vs K₂O?</h4>
+                        <p>Targets are elemental P and K. The tool converts to P₂O₅ (×2.291) and K₂O (×1.205) for fertilizer sources.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Which fertilizers are included?</h4>
+                        <p>Urea (46‑0‑0), DAP (18‑46‑0), MOP (0‑0‑60), and custom blends with N‑P₂O₅‑K₂O percentages.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Can I do split applications?</h4>
+                        <p>Yes, typically for N. P and K are often applied at planting; adjust as local guidance suggests.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it really free?</h4>
+                        <p>Yes lifetime free and unlimited. No signups, no paywalls, no watermarks.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Does this replace soil tests?</h4>
+                        <p>No. Always use recent soil tests and local recommendations for final decisions.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                </div>
+            </div>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
+              <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
+              <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
+              <div id="sidead-7" aria-label="Sidebar Ad 7"></div>
+            </aside>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
+              <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
+              <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
+              <div id="sidead-8" aria-label="Sidebar Ad 8"></div>
+            </aside>
+        </div>
+
+        <div class="mb-4">
+          <div id="topad-2" aria-label="Top Ad 2"></div>
+        </div>
+
+        <section class="mb-10">
+          <h3 class="text-2xl text-center font-semibold mb-4">Explore more free calculator tools</h3>
+            <p class="text-lg text-center">
+              Try our other tools: 
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/fertilizer-calculator">Fertilizer Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/age-calculator">Age Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/calorie-calculator">Calorie Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmi-calculator">BMI Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmr-calculator">BMR Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/compound-interest-calculator">Compound Interest Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/loan-calculator">Loan Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/date-calculator">Date Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/ip-subnet-calculator">IP Subnet Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/percentage-calculator">Percentage Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/scientific-calculator">Scientific Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/math-equation-solver">Math Equation Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/algebra-solver">Algebra Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/trigonometry-calculator">Trigonometry Calculator</a>.
+           </p>
+        </section>
+
+    </div>
+</main>
+
+
+
+<div id="notification" class="fixed top-[-100px] left-1/2 -translate-x-1/2 p-3 px-6 rounded-lg bg-slate-800 text-white font-semibold z-[1000] transition-all duration-300 ease-in-out"></div>
+
+<!-- :: Footer PLACEHOLDER :: -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/calculator/fertilizer.js" defer></script>
+
+</body>
+</html>

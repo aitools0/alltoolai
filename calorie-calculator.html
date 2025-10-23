@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="All Tool AI" />
+  <link rel="canonical" href="https://www.alltoolai.com/calorie-calculator" />
+    
+  <title>Daily Calorie Calculator (TDEE & Macros) | AllToolAI</title>
+  <meta name="description" content="Free daily calorie calculator (TDEE) using the Revised Harris–Benedict equation. See your BMR, maintenance calories, weight-loss/gain targets, and personalized macros. Private, no signup." />
+  <meta name="keywords" content="calorie calculator, TDEE calculator, maintenance calories, macro calculator, BMR calculator, daily caloric needs, calorie deficit, weight loss calories, weight gain calories, Harris-Benedict, Mifflin St Jeor, metric and imperial" />
+  <meta name="robots" content="index, follow, max-snippet, max-image-preview" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Daily Calorie Calculator (TDEE & Macros) | AllToolAI" />
+  <meta property="og:description" content="Estimate BMR, TDEE, maintenance calories, and macros. Free, fast, and 100% private everything runs in your browser." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.alltoolai.com/calorie-calculator" />
+  <meta property="og:image" content="https://www.alltoolai.com/assets/img/og/calorie-calculator-1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daily Calorie Calculator (TDEE & Macros) | AllToolAI" />
+  <meta name="twitter:description" content="Free, accurate TDEE calculator with macros. Private, no signup. Metric & Imperial." />
+  <meta name="twitter:image" content="https://www.alltoolai.com/assets/img/og/calorie-calculator-1200x630.png" />
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://www.alltoolai.com/#website",
+        "url": "https://www.alltoolai.com/",
+        "name": "AllToolAI",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.alltoolai.com/calorie-calculator#webpage",
+        "url": "https://www.alltoolai.com/calorie-calculator",
+        "name": "Daily Calorie Calculator (TDEE & Macros) 2025 | AllToolAI",
+        "isPartOf": { "@id": "https://www.alltoolai.com/#website" },
+        "about": { "@id": "https://www.alltoolai.com/calorie-calculator#app" },
+        "description": "Free daily calorie calculator (TDEE) using the Revised Harris–Benedict equation. See your BMR, maintenance calories, weight-loss/gain targets, and personalized macros. Private, no signup.",
+        "datePublished": "2025-01-01",
+        "dateModified": "2025-10-19",
+        "inLanguage": "en",
+        "breadcrumb": { "@id": "https://www.alltoolai.com/calorie-calculator#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.alltoolai.com/calorie-calculator#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.alltoolai.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Calculator Tools", "item": "https://www.alltoolai.com/calculator-tools" },
+          { "@type": "ListItem", "position": 3, "name": "Calorie Calculator", "item": "https://www.alltoolai.com/calorie-calculator" }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.alltoolai.com/calorie-calculator#app",
+        "name": "Daily Calorie Calculator (TDEE & Macros)",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Web",
+        "url": "https://www.alltoolai.com/calorie-calculator",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "isAccessibleForFree": true,
+        "description": "TDEE/BMR and macro calculator using Revised Harris–Benedict. Supports Metric and Imperial units. 100% private calculations run locally in your browser.",
+        "publisher": { "@id": "https://www.alltoolai.com/#website" }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.alltoolai.com/calorie-calculator#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does this calorie calculator work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We estimate your Basal Metabolic Rate (BMR) using the Revised Harris–Benedict equation, then multiply by your activity level (1.2–1.9) to get TDEE. Goal presets adjust calories (±250 or ±500), and we convert your target calories into macros based on your chosen split."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which formula do you use for BMR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Revised Harris–Benedict. It’s widely used and accurate for most people. Results are estimates; consult a professional for medical or clinical needs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. All calculations run locally in your browser. No sign-in, no uploads, and no tracking of your inputs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What activity level should I pick?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sedentary: 1.2; Lightly active: 1.375; Moderately active: 1.55; Very active: 1.725; Extra active: 1.9. Choose the level that best matches your average week."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How big should my calorie deficit or surplus be?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mild changes (±250 kcal/day) are gentler; standard (±500 kcal/day) change weight faster but may be harder to sustain. Avoid extreme deficits unless medically supervised."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do the macro splits mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Balanced: 30% protein, 40% carbs, 30% fat. Low carb: 40% protein, 20% carbs, 40% fat. High protein: 40% protein, 30% carbs, 30% fat. These are starting points adjust for preferences or medical guidance."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="/assets/svg/logo.svg" type="image/svg+xml">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Non-blocking load for your Tailwind build -->
+  <link rel="preload" href="/assets/style/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/style/style.css" />
+    
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/calculator/calculator-ft.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+  <style>
+    .color-link3{
+      color: oklch(54.6% 0.245 262.881);
+      font-weight: 750;
+    }
+  </style>
+
+</head>
+
+<body class="bg-slate-200 font-sans text-slate-800 flex min-h-screen flex-col transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200">
+
+<!-- :: HEADER PLACEHOLDER :: -->
+<div id="header-placeholder"></div>
+
+<main class="flex-grow w-full">
+    <div class="p-4 sm:p-6 mt-16 mx-auto">
+        <!-- START: Top Horizontal Ad Section -->
+        <div class="mb-4">
+            <div id="topad-1" aria-label="Top Ad 1"></div>
+        </div>
+        <!-- END: Top Horizontal Ad Section -->
+
+        <div class="lg:grid lg:grid-cols-[side_bar] lg:gap-4">
+
+            <div class="min-w-0" id="calorie-calculator">
+                <section class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl border border-indigo-300 dark:bg-slate-800 dark:border-slate-700">
+                    <div class="text-center mb-8">
+                        <h1 class="text-3xl lg:text-4xl font-extrabold p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Ultimate Daily Calorie Calculator</h1>
+                        <p class="mt-2 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400">Science-backed estimates for your TDEE and a personalized nutrition plan to reach your goals.</p>
+                    </div>
+                    
+                    <div class="w-full max-w-4xl mx-auto space-y-6">
+                         <!-- UI Stickers from Calorie  Calc -->
+                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                             <div>
+                                <label class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Gender</label>
+                                <div class="flex p-1 bg-slate-200 dark:bg-slate-900 rounded-lg">
+                                    <button id="btn-male" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Male</button>
+                                    <button id="btn-female" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Female</button>
+                                </div>
+                            </div>
+                            <div>
+                               <label class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Units</label>
+                               <div class="flex p-1 bg-slate-200 dark:bg-slate-900 rounded-lg">
+                                   <button id="btn-metric" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Metric</button>
+                                   <button id="btn-imperial" class="w-1/2 py-2.5 px-4 rounded-md font-semibold transition-all duration-300">Imperial</button>
+                               </div>
+                           </div>
+                        </div>
+
+                        <!-- Input fields styled like Calorie  Calc -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-4">
+                            <div>
+                                <label for="age" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Age</label>
+                                <input type="number" id="age" min="15" max="120" placeholder="e.g., 25" required class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                            </div>
+                            <div>
+                                <label for="weight" id="label-weight" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Weight (kg)</label>
+                                <input type="number" id="weight" min="1" placeholder="e.g., 70" required class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                            </div>
+                            <div>
+                               <div id="height-metric-container">
+                                    <label for="height-cm" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Height (cm)</label>
+                                    <input type="number" id="height-cm" min="1" placeholder="e.g., 180" required class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                               </div>
+                               <div id="height-imperial-container" style="display: none;">
+                                    <label class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Height (ft, in)</label>
+                                    <div class="flex gap-4">
+                                        <input type="number" id="height-ft" placeholder="ft" min="1" required class="block w-1/2 rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                        <input type="number" id="height-in" placeholder="in" min="0" max="11" class="block w-1/2 rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+
+                        <!-- Calorie Calculator Specific Fields (styled to match) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label for="activity" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Activity Level</label>
+                            <select id="activity" class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                <option value="1.2">Sedentary (office job)</option>
+                                <option value="1.375">Lightly Active (1-2 days/wk)</option>
+                                <option value="1.55" selected>Moderately Active (3-5 days/wk)</option>
+                                <option value="1.725">Very Active (6-7 days/wk)</option>
+                                <option value="1.9">Extra Active (physical job)</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="goal" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Your Goal</label>
+                             <select id="goal" class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                <option value="maintain">Maintain Weight</option>
+                                <option value="lose-mild">Mild Loss (~0.5 lb/wk, -250 Cal)</option>
+                                <option value="lose-std">Weight Loss (~1 lb/wk, -500 Cal)</option>
+                                <option value="gain-mild">Mild Gain (~0.5 lb/wk, +250 Cal)</option>
+                                <option value="gain-std">Weight Gain (~1 lb/wk, +500 Cal)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                             <label for="macro-split" class="block text-base mb-2 font-medium text-slate-900 dark:text-slate-200">Macronutrient Split</label>
+                             <select id="macro-split" class="block w-full rounded-md border-0 py-2.5 px-3 bg-slate-200 text-slate-900 dark:bg-slate-900 dark:text-slate-200">
+                                <option value="balanced">Balanced (30% P, 40% C, 30% F)</option>
+                                <option value="low-carb">Low Carb (40% P, 20% C, 40% F)</option>
+                                <option value="high-protein">High Protein (40% P, 30% C, 30% F)</option>
+                             </select>
+                        </div>
+                    </div>
+                        
+                        <!-- Error Message and Buttons from Calorie  Calc -->
+                        <div id="error-message-container" class="text-center pt-2" style="display: none;">
+                            <p id="error-message-text" class="text-sm font-medium text-red-600 dark:text-red-400"></p>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                            <button id="btn-calculate" type="button" class="w-full sm:w-auto flex-grow text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-base px-5 py-3 transition-all dark:bg-indigo-500 dark:hover:bg-indigo-600">Calculate</button>
+                            <button id="btn-reset" type="button" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold rounded-lg text-base px-5 py-3 transition-colors dark:bg-slate-600 dark:hover:bg-slate-500 dark:text-slate-200">Reset</button>
+                        </div>
+                    </div>
+
+                    <!-- Results Section (Styled like Calorie  Calc) -->
+                    <div id="results-container" class="pt-8 mt-8" style="display: none;">
+                        <div id="results-heading">
+                            <h2 class="text-3xl font-bold text-center text-slate-800 dark:text-white">Your Estimated Daily Needs</h2>
+                        </div>
+                        
+                        <!-- Maintenance and Goal Calories -->
+                        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                            <div class="text-center space-y-2 p-6 bg-slate-100 dark:bg-slate-900 rounded-lg">
+                                <h3 class="font-bold text-lg text-slate-600 dark:text-slate-300">Maintenance Calories</h3>
+                                <p id="maintenance-calories" class="text-5xl font-bold text-indigo-600 dark:text-indigo-400">0</p>
+                                <p class="text-base text-slate-500 dark:text-slate-400">calories/day</p>
+                            </div>
+                            <div class="text-center space-y-2 p-6 bg-slate-100 dark:bg-slate-900 rounded-lg border border-indigo-300 dark:border-indigo-700">
+                                <h3 id="goal-title" class="font-bold text-lg text-indigo-800 dark:text-indigo-200">Maintain Weight</h3>
+                                <p id="goal-calories" class="text-5xl font-bold text-indigo-600 dark:text-indigo-400">0</p>
+                                <p class="text-base text-indigo-600 dark:text-indigo-400">Target calories/day.</p>
+                            </div>
+                        </div>
+
+                        <!-- Macronutrient Goals -->
+                        <div class="pt-8 mt-8">
+                             <h2 class="text-2xl font-bold text-center text-slate-800 dark:text-slate-200">Personalized Macronutrient Plan</h2>
+                            <div class="mt-4 overflow-x-auto">
+                                <table class="min-w-full text-center text-lg">
+                                    <thead class="bg-slate-200 dark:bg-slate-900">
+                                        <tr>
+                                            <th id="protein-percent" class="p-3 font-semibold text-green-500">Protein (30%)</th>
+                                            <th id="carbs-percent" class="p-3 font-semibold text-blue-500">Carbs (40%)</th>
+                                            <th id="fat-percent" class="p-3 font-semibold text-red-500">Fat (30%)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-lg">
+                                        <tr>
+                                            <td id="protein-grams" class="p-3 font-medium text-green-500">0 g</td>
+                                            <td id="carbs-grams" class="p-3 font-medium text-blue-500">0 g</td>
+                                            <td id="fat-grams" class="p-3 font-medium text-red-500">0 g</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="my-4">
+                  <div id="midad-1" aria-label="Mid Ad 1"></div>
+                </div>
+
+                <div class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+                  <section class="mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Fast, Free, Private Calorie Calculator</h2>
+                    <p class="text-lg font-medium">
+                      Estimate your daily calories (TDEE) and macronutrients with science based formulas. Top, Fast, Best and Lifetime Free Unlimited your information is 100% confidential and secure (everything runs locally in your browser).
+                    </p>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Why people love this calorie/TDEE calculator</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Science based</h4>
+                        <p>Uses Revised Harris–Benedict for BMR and standard activity multipliers for accurate TDEE estimates.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Maintenance, loss, or gain</h4>
+                        <p>One click to set mild or standard deficits/surpluses to reach your goals.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Personalized macros</h4>
+                        <p>Balanced, low carb, or high protein splits see grams of protein, carbs, and fat instantly.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Metric & Imperial</h4>
+                        <p>Works worldwide kg/cm or lbs/ft+in with clean, accessible UI.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Free & private</h4>
+                        <p>Lifetime free. No signups, no tracking. All calculations happen on your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Mobile friendly</h4>
+                        <p>Optimized for Chrome, Edge, Firefox, and Safari on desktop and mobile.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Popular uses worldwide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Weight management</h4>
+                        <p>Find maintenance, deficit, or surplus calories for sustainable results.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Sports & fitness</h4>
+                        <p>Plan macros for cutting, bulking, endurance, or team sports seasons.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Diet planning</h4>
+                        <p>Adjust carbs/fats for low carb, higher protein, vegetarian, or vegan diets.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Healthcare check ins</h4>
+                        <p>Discuss calorie targets with your dietitian or healthcare provider.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Busy professionals</h4>
+                        <p>Set realistic targets for desk jobs or hybrid/active work weeks.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Macro tracking</h4>
+                        <p>Use grams/day targets with your favorite tracking app.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-2" aria-label="Mid Ad 2"></div>
+                  </div>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4">How we calculate your calories (BMR → TDEE)</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                      <li><span class="font-semibold">BMR:</span> Revised Harris–Benedict equation based on gender, age, weight, and height.</li>
+                      <li><span class="font-semibold">TDEE:</span> BMR × your activity level (1.2–1.9) to estimate daily energy needs.</li>
+                      <li><span class="font-semibold">Goal calories:</span> Apply a mild (±250 kcal) or standard (±500 kcal) change for loss or gain.</li>
+                      <li><span class="font-semibold">Macros:</span> Convert target calories to grams using your selected split.</li>
+                    </ul>
+
+                    <div class="mt-4 overflow-x-auto">
+                      <table class="min-w-full text-left">
+                        <thead class="bg-slate-100 dark:bg-slate-800">
+                          <tr>
+                            <th class="p-3">Activity level</th>
+                            <th class="p-3">Multiplier</th>
+                            <th class="p-3">Typical description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td class="p-3">Sedentary</td><td class="p-3">1.2</td><td class="p-3">Mostly sitting/office work</td></tr>
+                          <tr><td class="p-3">Lightly active</td><td class="p-3">1.375</td><td class="p-3">1–2 exercise days/week</td></tr>
+                          <tr><td class="p-3">Moderately active</td><td class="p-3">1.55</td><td class="p-3">3–5 exercise days/week</td></tr>
+                          <tr><td class="p-3">Very active</td><td class="p-3">1.725</td><td class="p-3">6–7 exercise days/week</td></tr>
+                          <tr><td class="p-3">Extra active</td><td class="p-3">1.9</td><td class="p-3">Physical job + regular training</td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4">How to use this calorie calculator</h3>
+                    <ol class="list-decimal pl-5 space-y-2">
+                      <li>Select your gender and units (Metric or Imperial).</li>
+                      <li>Enter age, weight, and height.</li>
+                      <li>Choose your weekly activity level.</li>
+                      <li>Pick your goal (maintain, loss, gain) and macro split.</li>
+                      <li>Click “Calculate” to see TDEE, goal calories, and daily macros.</li>
+                    </ol>
+                    <p class="mt-3 text-sm text-slate-600 dark:text-slate-400">Disclaimer: Educational estimates only. Not medical advice.</p>
+                  </section>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Global availability (GEO)</h3>
+                    <p class="text-lg">
+                      Built for users in the USA, UK, Canada, Australia, India, EU, Middle East, and Asia. Works with Metric & Imperial units.
+                      Also searched as: TDEE calculator, maintenance calories calculator, macro calculator. In other languages: calculadora de calorías (ES), calculatrice de calories (FR), Kalorienrechner (DE), calculadora de calorias (PT), حاسبة السعرات الحرارية (AR), कैलोरी कैलकुलेटर (HI), kalkulator kalori (ID), カロリー計算機 (JA), 칼로리 계산기 (KO).
+                    </p>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-3" aria-label="Mid Ad 3"></div>
+                  </div>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it private and secure?</h4>
+                        <p>Yes. All calculations run locally in your browser. Your data never leaves your device.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Which formula do you use?</h4>
+                        <p>Revised Harris–Benedict for BMR, multiplied by activity level to estimate TDEE.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">How big should my deficit/surplus be?</h4>
+                        <p>We offer mild (±250 kcal/day) and standard (±500 kcal/day) options start conservatively and adjust.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Do you support Metric & Imperial?</h4>
+                        <p>Yes. Enter kg/cm or lbs/ft+in and switch units any time.</p>
+                      </div>
+                    </div>
+                  </section>
+  
+                </div>
+            </div>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
+              <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
+              <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
+              <div id="sidead-7" aria-label="Sidebar Ad 7"></div>
+            </aside>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
+              <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
+              <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
+              <div id="sidead-8" aria-label="Sidebar Ad 8"></div>
+            </aside>
+        </div>
+
+        <div class="mb-4">
+          <div id="topad-2" aria-label="Top Ad 2"></div>
+        </div>
+
+        <section class="mb-10">
+          <h3 class="text-2xl text-center font-semibold mb-4">Explore more free calculator tools</h3>
+            <p class="text-lg text-center">
+              Try our other tools: 
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/fertilizer-calculator">Fertilizer Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/age-calculator">Age Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/calorie-calculator">Calorie Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmi-calculator">BMI Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmr-calculator">BMR Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/compound-interest-calculator">Compound Interest Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/loan-calculator">Loan Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/date-calculator">Date Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/ip-subnet-calculator">IP Subnet Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/percentage-calculator">Percentage Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/scientific-calculator">Scientific Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/math-equation-solver">Math Equation Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/algebra-solver">Algebra Solver</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/trigonometry-calculator">Trigonometry Calculator</a>.
+           </p>
+        </section>
+
+    </div>
+</main>
+
+<!-- :: Footer PLACEHOLDER :: -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/calculator/calorie.js" defer></script>
+
+</body>
+</html>
