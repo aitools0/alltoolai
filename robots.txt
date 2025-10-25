@@ -1,6 +1,3 @@
 User-agent: *
 Disallow: 
-Disallow: /about
-Disallow: /contact
-Disallow: /privacy-policy
 Sitemap: https://www.alltoolai.com/sitemap.xml
