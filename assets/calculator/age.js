@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const MS_PER_HOUR = 3600000;
   const MS_PER_DAY = 86400000;
 
+  // Respect reduced motion
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // Utils
   function formatLocalDateInputValue(date) {
     const y = date.getFullYear();
@@ -43,20 +46,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function parseDateParts(yyyyMmDd) {
-    const [y, m, d] = yyyyMmDd.split('-').map(Number);
+    const [y, m, d] = (yyyyMmDd || '').split('-').map(Number);
     return { y, m, d };
   }
 
   function parseTimeParts(hhmm) {
     if (!hhmm) return { hh: 0, mm: 0 };
     const [hhStr, mmStr] = hhmm.split(':');
-    const hh = Math.max(0, Math.min(23, Number(hhStr)));
-    const mm = Math.max(0, Math.min(59, Number(mmStr)));
-    return { hh: isFinite(hh) ? hh : 0, mm: isFinite(mm) ? mm : 0 };
+    const hhNum = Number(hhStr);
+    const mmNum = Number(mmStr);
+    const hh = Number.isFinite(hhNum) ? Math.max(0, Math.min(23, hhNum)) : 0;
+    const mm = Number.isFinite(mmNum) ? Math.max(0, Math.min(59, mmNum)) : 0;
+    return { hh, mm };
   }
 
   function toLocalDate({ y, m, d }, { hh = 0, mm = 0 } = {}) {
-    return new Date(y, m - 1, d, hh, mm, 0, 0);
+    return new Date(y, (m || 1) - 1, d || 1, hh, mm, 0, 0);
   }
 
   // Calendar age calculation (years, months, days) using local calendar dates
@@ -83,41 +88,94 @@ document.addEventListener('DOMContentLoaded', function () {
     return { years, months, days };
   }
 
+  // Next birthday calculation with Feb 29 handling
   function getNextBirthday(nowDate, birthParts) {
-    const year = nowDate.getFullYear();
-    let candidate = new Date(year, birthParts.m - 1, birthParts.d);
-    // Compare on start-of-day basis to avoid time-of-day quirks
+    const { m: bm, d: bd } = birthParts;
     const todayStart = new Date(nowDate.getFullYear(), nowDate.getMonth(), nowDate.getDate());
+
+    function isValidDate(y, m, d) {
+      const dt = new Date(y, m - 1, d);
+      return dt.getFullYear() === y && dt.getMonth() === m - 1 && dt.getDate() === d;
+    }
+
+    function birthdayInYear(y) {
+      if (bd === 29 && bm === 2 && !isValidDate(y, 2, 29)) {
+        // Map Feb 29 to Feb 28 on non-leap years
+        return new Date(y, 1, 28);
+        // Alternative: return new Date(y, 2, 1); // Mar 1
+      }
+      return new Date(y, bm - 1, bd);
+    }
+
+    let candidate = birthdayInYear(nowDate.getFullYear());
     const candidateStart = new Date(candidate.getFullYear(), candidate.getMonth(), candidate.getDate());
-    if (candidateStart - todayStart < 0) {
-      candidate = new Date(year + 1, birthParts.m - 1, birthParts.d);
+    if (candidateStart < todayStart) {
+      candidate = birthdayInYear(nowDate.getFullYear() + 1);
     }
     return new Date(candidate.getFullYear(), candidate.getMonth(), candidate.getDate());
   }
 
   function showError(msg) {
+    if (!errorMessage) return;
     const p = errorMessage.querySelector('p') || errorMessage.firstElementChild;
     if (p) p.textContent = msg;
     errorMessage.classList.remove('hidden');
+
+    // Accessibility: indicate invalid input and focus the alert
+    birthDateInput.setAttribute('aria-invalid', 'true');
+    birthDateInput.setAttribute('aria-describedby', 'error-message');
+    errorMessage.tabIndex = -1;
+    errorMessage.focus();
+
     resultsSection.classList.add('hidden');
   }
 
   function clearError() {
+    if (!errorMessage) return;
     errorMessage.classList.add('hidden');
+    birthDateInput.removeAttribute('aria-invalid');
+    birthDateInput.removeAttribute('aria-describedby');
+    errorMessage.removeAttribute('tabindex');
   }
 
   function formatNumber(n) {
     try { return n.toLocaleString(); } catch { return String(n); }
   }
 
+  // Days between two local calendar dates using UTC to avoid DST drift
+  function daysBetweenLocalDatesUTC(a /* Date */, b /* Date */) {
+    const aUTC = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+    const bUTC = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+    return Math.round((bUTC - aUTC) / MS_PER_DAY);
+  }
+
   // Set date constraints (local)
   const today = new Date();
-  birthDateInput.max = formatLocalDateInputValue(today);
-  birthDateInput.min = '1900-01-01';
+  if (birthDateInput) {
+    birthDateInput.max = formatLocalDateInputValue(today);
+    birthDateInput.min = '1900-01-01';
+  }
 
   // Events
   calculateButton.addEventListener('click', calculateAge);
   resetButton.addEventListener('click', resetCalculator);
+
+  // Allow Enter to trigger calculation from inputs
+  [birthDateInput, birthTimeInput].forEach(el => {
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        calculateAge();
+      }
+    });
+  });
+
+  // Clear error when user edits inputs
+  [birthDateInput, birthTimeInput].forEach(el => {
+    el.addEventListener('input', () => {
+      if (!errorMessage.classList.contains('hidden')) clearError();
+    });
+  });
 
   function calculateAge() {
     const birthDateValue = birthDateInput.value;
@@ -147,15 +205,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Exact totals using time difference
     const diffMs = now.getTime() - birthDateTime.getTime();
-    const totalDays = Math.floor(diffMs / MS_PER_DAY);
+
+    // Calendar days lived (DST safe via UTC midnight comparison)
+    const birthStart = new Date(birthParts.y, birthParts.m - 1, birthParts.d);
+    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const totalDays = daysBetweenLocalDatesUTC(birthStart, todayStart);
+
+    // Exact totals including time of birth
     const totalHours = Math.floor(diffMs / MS_PER_HOUR);
     const totalMinutes = Math.floor(diffMs / MS_PER_MINUTE);
 
-    // Next birthday countdown in calendar days
+    // Next birthday countdown in calendar days (DST safe)
     const nextBday = getNextBirthday(now, birthParts);
-    const todayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
     const nextBdayStart = new Date(nextBday.getFullYear(), nextBday.getMonth(), nextBday.getDate());
-    let countdownDays = Math.round((nextBdayStart - todayStart) / MS_PER_DAY);
+    let countdownDays = daysBetweenLocalDatesUTC(todayStart, nextBdayStart);
     if (countdownDays < 0) countdownDays = 0;
 
     // Update UI
@@ -169,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
     countdownDaysSpan.textContent = formatNumber(countdownDays);
 
     resultsSection.classList.remove('hidden');
-    resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    resultsSection.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
   }
 
   function resetCalculator() {
@@ -185,5 +248,8 @@ document.addEventListener('DOMContentLoaded', function () {
     totalHoursSpan.textContent = '';
     totalMinutesSpan.textContent = '';
     countdownDaysSpan.textContent = '';
+
+    // Return focus to the date input for better UX
+    birthDateInput.focus();
   }
 });
