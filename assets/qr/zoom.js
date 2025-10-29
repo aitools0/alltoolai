@@ -18,28 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let debounceTimeout = null;
     let errorTimeout = null;
 
-    // --- Core Functions ---
+    // --- Helpers ---
 
-    /**
-     * Displays an error message for 3 seconds. Ensures only one error message timer is active.
-     * @param {string} message The error message to display.
-     */
     const showError = (message) => {
         errorMessage.textContent = message;
-        clearTimeout(errorTimeout); // Clear any existing timer
+        clearTimeout(errorTimeout);
         errorTimeout = setTimeout(clearError, 3000);
     };
 
-    /**
-     * Clears the error message.
-     */
     const clearError = () => {
         errorMessage.textContent = '';
     };
-    
-    /**
-     * Clears the QR code preview area and disables download buttons.
-     */
+
     const clearPreview = () => {
         qrCodePreview.innerHTML = '';
         previewPlaceholder.style.display = 'block';
@@ -48,45 +38,103 @@ document.addEventListener('DOMContentLoaded', () => {
         qrCodeGenerated = false;
     };
 
-    /**
-     * Resets the entire tool to its default state.
-     */
     const resetTool = () => {
         meetingIdInput.value = '';
         passwordInput.value = '';
         meetingTopicInput.value = '';
         fgColorInput.value = '#2D8CFF';
         bgColorInput.value = '#ffffff';
-
         clearError();
         clearPreview();
     };
 
-    /**
-     * Generates and displays a QR code preview.
-     */
+    // Determine if a string looks like a Zoom hashed pwd (base64url-like)
+    const isLikelyHashedPwd = (pwd) => /^[A-Za-z0-9_-]{16,}$/.test(pwd);
+
+    // Try to build the best Zoom URL based on input
+    // - Accepts plain Meeting ID (with spaces/dashes), full Zoom https links, or zoommtg:// deep links.
+    // - If a plain passcode is provided without a hashed pwd, we auto-use the zoommtg:// scheme so it works in the Zoom app.
+    const buildZoomURL = (rawMeetingInput, rawPasscode) => {
+        const value = (rawMeetingInput || '').trim();
+        const pass = (rawPasscode || '').trim();
+        let note = '';
+
+        // If zoommtg deep link is provided, respect it and add pwd if needed
+        if (/^zoommtg:\/\//i.test(value)) {
+            if (pass && !/[\?&]pwd=/.test(value)) {
+                const sep = value.includes('?') ? '&' : '?';
+                return { url: `${value}${sep}pwd=${encodeURIComponent(pass)}`, note };
+            }
+            return { url: value, note };
+        }
+
+        // If a full HTTPS Zoom URL is provided, extract meeting and pwd
+        if (/^https?:\/\//i.test(value) && /zoom\.us/i.test(value)) {
+            try {
+                const u = new URL(value);
+                const pwdFromUrl = u.searchParams.get('pwd') || '';
+                const idMatch = u.pathname.match(/\/j\/(\d+)/);
+                const meetingIdFromUrl = idMatch ? idMatch[1] : '';
+
+                if (!meetingIdFromUrl) {
+                    return { url: '', note: 'Could not find a meeting ID in the provided URL.' };
+                }
+
+                // If user typed a plain passcode but URL has no hashed pwd, prefer deep link so passcode works
+                if (!pwdFromUrl && pass && !isLikelyHashedPwd(pass)) {
+                    note = 'Using Zoom app link so your passcode works without hashing.';
+                    return { url: `zoommtg://zoom.us/join?confno=${meetingIdFromUrl}&pwd=${encodeURIComponent(pass)}`, note };
+                }
+
+                // Otherwise keep the same domain and include either existing hashed pwd or a user-provided hashed pwd
+                const finalPwd = pwdFromUrl || (pass && isLikelyHashedPwd(pass) ? pass : '');
+                const q = finalPwd ? `?pwd=${finalPwd}` : '';
+                return { url: `${u.origin}/j/${meetingIdFromUrl}${q}`, note };
+            } catch (e) {
+                return { url: '', note: 'Invalid Zoom URL.' };
+            }
+        }
+
+        // Otherwise treat as Meeting ID (sanitize to digits)
+        const meetingId = value.replace(/\D/g, '');
+        if (!meetingId) {
+            return { url: '', note: 'Meeting ID is required.' };
+        }
+
+        if (pass) {
+            if (isLikelyHashedPwd(pass)) {
+                return { url: `https://zoom.us/j/${meetingId}?pwd=${encodeURIComponent(pass)}`, note };
+            }
+            // Plain passcode -> use Zoom app deep link
+            note = 'Using Zoom app link so your passcode works without hashing.';
+            return { url: `zoommtg://zoom.us/join?confno=${meetingId}&pwd=${encodeURIComponent(pass)}`, note };
+        }
+
+        return { url: `https://zoom.us/j/${meetingId}`, note };
+    };
+
+    // --- Core Functions ---
+
     const generateQRCode = () => {
         clearError();
-        const meetingId = meetingIdInput.value.trim();
-        const password = passwordInput.value.trim();
+
+        const meetingInput = meetingIdInput.value;
+        const password = passwordInput.value;
         const topic = meetingTopicInput.value.trim();
 
-        if (!meetingId) {
-            showError('Meeting ID is required.');
+        const { url, note } = buildZoomURL(meetingInput, password);
+        if (!url) {
+            showError('Meeting ID or URL is required.');
             return;
         }
 
-        let url = `https://zoom.us/j/${meetingId}`;
-        if (password) {
-            url += `?pwd=${encodeURIComponent(password)}`;
-        }
+        if (note) showError(note); // show helpful notice if we switched to deep link
 
         qrCodePreview.innerHTML = '';
         const previewSize = 256;
 
         const tempContainer = document.createElement('div');
         try {
-            // Generate QR code in a temporary, non-visible element
             new QRCode(tempContainer, {
                 text: url,
                 width: previewSize,
@@ -96,13 +144,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 correctLevel: QRCode.CorrectLevel.H
             });
         } catch (e) {
-             showError('Error generating QR Code.');
-             console.error(e);
-             clearPreview();
-             return;
+            showError('Error generating QR Code.');
+            console.error(e);
+            clearPreview();
+            return;
         }
 
-        // Use a short timeout to ensure the QRCode library has rendered the element
         setTimeout(() => {
             const qrElement = tempContainer.querySelector('canvas') || tempContainer.querySelector('img');
             if (!qrElement) {
@@ -115,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
             previewCanvas.width = previewSize;
             previewCanvas.height = previewSize + topicHeight;
             const ctx = previewCanvas.getContext('2d');
-            
+
             ctx.fillStyle = bgColorInput.value;
             ctx.fillRect(0, 0, previewCanvas.width, previewCanvas.height);
 
@@ -124,9 +171,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.fillStyle = fgColorInput.value;
                 ctx.textAlign = 'center';
                 ctx.textBaseline = 'middle';
-                ctx.fillText(topic, previewSize / 2, topicHeight / 2, previewSize - 20); // Add padding
+                ctx.fillText(topic, previewSize / 2, topicHeight / 2, previewSize - 20);
             }
-            
+
+            // drawImage works for both canvas and img elements
             ctx.drawImage(qrElement, 0, topicHeight, previewSize, previewSize);
 
             qrCodePreview.appendChild(previewCanvas);
@@ -136,25 +184,20 @@ document.addEventListener('DOMContentLoaded', () => {
             qrCodeGenerated = true;
         }, 50);
     };
-    
-    /**
-     * Handles the download request, including dynamically loading the PDF library if needed.
-     * @param {'png' | 'pdf'} format The desired download format.
-     */
+
     const downloadHandler = (format) => {
         if (!qrCodeGenerated) {
             showError('Please generate a QR code first.');
             return;
         }
 
-        // Dynamically load jsPDF library only when needed and if not already loaded
         if (format === 'pdf' && typeof window.jspdf === 'undefined') {
             downloadPdfBtn.textContent = 'Loading PDF Library...';
             downloadPdfBtn.disabled = true;
             const script = document.createElement('script');
             script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
             script.onload = () => {
-                initiateDownload(format); // Proceed to download once script is loaded
+                initiateDownload(format);
                 downloadPdfBtn.textContent = 'Download PDF';
                 downloadPdfBtn.disabled = false;
             };
@@ -169,37 +212,42 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    /**
-     * Creates the high-resolution file for download.
-     * @param {'png' | 'pdf'} format The file format to generate.
-     */
     const initiateDownload = (format) => {
-        const meetingId = meetingIdInput.value.trim();
-        const password = passwordInput.value.trim();
+        const meetingInput = meetingIdInput.value;
+        const password = passwordInput.value;
         const topic = meetingTopicInput.value.trim();
 
-        let url = `https://zoom.us/j/${meetingId}`;
-        if (password) url += `?pwd=${encodeURIComponent(password)}`;
-        
+        const { url } = buildZoomURL(meetingInput, password);
+        if (!url) {
+            showError('Invalid meeting info. Regenerate the QR code.');
+            return;
+        }
+
         const highRes = 1200;
         const margin = 100;
         const topicHeight = topic ? 200 : 0;
-        
+
         const canvasWidth = highRes + margin * 2;
         const canvasHeight = highRes + margin * 2 + topicHeight;
-        
-        // Create an off-screen container for high-resolution rendering
+
         const tempContainer = document.createElement('div');
         tempContainer.style.position = 'absolute';
         tempContainer.style.left = '-9999px';
         document.body.appendChild(tempContainer);
 
         try {
-            new QRCode(tempContainer, { text: url, width: highRes, height: highRes, colorDark: fgColorInput.value, colorLight: bgColorInput.value, correctLevel: QRCode.CorrectLevel.H });
+            new QRCode(tempContainer, {
+                text: url,
+                width: highRes,
+                height: highRes,
+                colorDark: fgColorInput.value,
+                colorLight: bgColorInput.value,
+                correctLevel: QRCode.CorrectLevel.H
+            });
 
             setTimeout(() => {
-                const highResCanvas = tempContainer.querySelector('canvas');
-                if (!highResCanvas) {
+                const srcEl = tempContainer.querySelector('canvas') || tempContainer.querySelector('img');
+                if (!srcEl) {
                     showError('Failed to generate high-resolution QR code.');
                     document.body.removeChild(tempContainer);
                     return;
@@ -220,8 +268,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     ctx.textBaseline = 'middle';
                     ctx.fillText(topic, canvasWidth / 2, (margin + topicHeight) / 2, canvasWidth - 40);
                 }
-                
-                ctx.drawImage(highResCanvas, margin, margin + topicHeight, highRes, highRes);
+
+                ctx.drawImage(srcEl, margin, margin + topicHeight, highRes, highRes);
 
                 if (format === 'png') {
                     const link = document.createElement('a');
@@ -234,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     doc.addImage(finalCanvas.toDataURL('image/png', 1.0), 'PNG', 0, 0, canvasWidth, canvasHeight);
                     doc.save('zoom-qr-code.pdf');
                 }
-                
+
                 document.body.removeChild(tempContainer);
             }, 100);
 
@@ -245,13 +293,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    /**
-     * Debounces the QR code generation to avoid excessive updates on input change.
-     */
     const debouncedGenerate = () => {
         clearTimeout(debounceTimeout);
-        // Only live-update if a QR code has already been generated once.
-        if (!qrCodeGenerated) return; 
+        if (!qrCodeGenerated) return;
         debounceTimeout = setTimeout(generateQRCode, 200);
     };
 
