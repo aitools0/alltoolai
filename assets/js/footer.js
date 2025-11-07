@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Quick Links</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/index" class="color-home hover:text-purple-600 dark:hover:text-purple-400">Home</a></li>
+                    <li><a href="https://www.alltoolai.com/" class="color-home hover:text-purple-600 dark:hover:text-purple-400">Home</a></li>
                     <li><a href="/about" class="color-about hover:text-purple-600 dark:hover:text-purple-400">About Us</a></li>
                     <li><a href="/contact" class="color-contact hover:text-purple-600 dark:hover:text-purple-400">Contact</a></li>
                     <li><a href="/privacy-policy" class="color-policy hover:text-purple-600 dark:hover:text-purple-400">Privacy Policy</a></li>
@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 id="main-tools" class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8 scroll-mt-16">Main Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
-                    <li><a href="/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
-                    <li><a href="/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
-                    <li><a href="/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
-                    <li><a href="/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
-                    <li><a href="/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
-                    <li><a href="/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
                 </ul>
             </div>
         </div>
@@ -85,4 +85,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
 });
-
