@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </a>
                 </div>
                 <nav class="hidden md:flex items-center space-x-8 text-lg font-semibold text-slate-800 dark:text-slate-200">
-                    <a href="/index" class="nav-link-animated hover:text-purple-600 dark:hover:text-purple-400">Home</a>
+                    <a href="https://www.alltoolai.com/" class="nav-link-animated hover:text-purple-600 dark:hover:text-purple-400">Home</a>
                     <a href="#main-tools" class="nav-link-animated hover:text-purple-600 dark:hover:text-purple-400">Tools List</a>
                     <a href="/about" class="nav-link-animated hover:text-purple-600 dark:hover:text-purple-400">About</a>
                     <a href="/contact" class="nav-link-animated hover:text-purple-600 dark:hover:text-purple-400">Contact</a>
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <!-- Mobile menu, show/hide based on menu state. -->
         <div id="mobile-menu" class="lg:hidden hidden">
             <div class="p-2 text-base font-medium text-slate-700 dark:text-slate-300">
-                <a href="/index" class="block p-2 mt-1 hover:bg-slate-100 dark:hover:bg-slate-700">Home</a>
+                <a href="https://www.alltoolai.com/" class="block p-2 mt-1 hover:bg-slate-100 dark:hover:bg-slate-700">Home</a>
                 <a href="#main-tools" class="block p-2 mt-1 hover:bg-slate-100 dark:hover:bg-slate-700">Tools List</a>
                 <a href="/about" class="block p-2 mt-1 hover:bg-slate-100 dark:hover:bg-slate-700">About</a>
                 <a href="/contact" class="block p-2 mt-1 hover:bg-slate-100 dark:hover:bg-slate-700">Contact</a>
