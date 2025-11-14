@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="flex items-center justify-between h-16">
                 <div class="flex-shrink-0">
                     <a href="https://www.alltoolai.com/" class="flex items-center space-x-3 transition-opacity hover:opacity-85" aria-label="Homepage">
-                        <img src="/assets/icon/favicon.svg" alt="All Tool AI Logo" class="w-10 h-10 lg:w-12 lg:h-12">
+                        <img src="/assets/svg/logo.svg" alt="All Tool AI Logo" class="w-10 h-10 lg:w-12 lg:h-12">
                         <div class="logo-text-block">
                             <div class="logo-main-line"><span class="logo-text alltool">All Tool&ensp;</span><span class="logo-text ai">Ai</span></div>
                             <div class="logo-sub-line"><span class="com-color">.Com</span></div>
@@ -61,4 +61,5 @@ document.addEventListener("DOMContentLoaded", function() {
         placeholder.innerHTML = headerHTML;
     }
 });
+
 
