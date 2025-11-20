@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Logo and Social Media Section -->
             <div class="space-y-4 text-slate-800 dark:text-slate-300">
                 <a href="https://www.alltoolai.com/" class="flex items-center space-x-2">
-                    <img src="/assets/svg/logo.svg" alt="All Tool AI Logo" class="w-10 h-10">
+                    <img src="/assets/icon/favicon.svg" alt="All Tool AI Logo" class="w-10 h-10">
                     <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">All Tool AI</span>
                 </a>
                 <p class="font-semibold">
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Quick Links</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/index" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
+                    <li><a href="https://www.alltoolai.com/" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
                     <li><a href="/about" class="hover:text-purple-600 dark:hover:text-purple-400">About Us</a></li>
                     <li><a href="/contact" class="hover:text-purple-600 dark:hover:text-purple-400">Contact</a></li>
                     <li><a href="/privacy-policy" class="hover:text-purple-600 dark:hover:text-purple-400">Privacy Policy</a></li>
@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 id="main-tools" class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8 scroll-mt-16">Main Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
-                    <li><a href="/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
-                    <li><a href="/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
-                    <li><a href="/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
-                    <li><a href="/unit-converter-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
-                    <li><a href="/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
-                    <li><a href="/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/unit-converter-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
                 </ul>
             </div>
 
@@ -75,20 +75,20 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Unit Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/length-unit-converter" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Length Unit Converter</a></li>
-                    <li><a href="/area-unit-converter" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Area Unit Converter</a></li>
-                    <li><a href="/data-transfer-rate-unit-converter" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Data Transfer Rate Unit Converter</a></li>
-                    <li><a href="/digital-storage-unit-converter" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">Digital Storage Unit Converter</a></li>
-                    <li><a href="/energy-unit-converter" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">Energy Unit Converter</a></li>
-                    <li><a href="/frequency-unit-converter" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Frequency Unit Converter</a></li>
-                    <li><a href="/fuel-economy-unit-converter" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Fuel Economy Unit Converter</a></li>
-                    <li><a href="/mass-unit-converter" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">Mass Unit Converter</a></li>
-                    <li><a href="/angle-unit-converter" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">Plane Angle Unit Converter</a></li>
-                    <li><a href="/pressure-unit-converter" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Pressure Unit Converter</a></li>
-                    <li><a href="/temperature-unit-converter" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Temperature Unit Converter</a></li>
-                    <li><a href="/speed-unit-converter" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Speed Unit Converter</a></li>
-                    <li><a href="/time-unit-converter" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Time Unit Converter</a></li>
-                    <li><a href="/volume-unit-converter" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Volume Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/length-unit-converter" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Length Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/area-unit-converter" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Area Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/data-transfer-rate-unit-converter" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Data Transfer Rate Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/digital-storage-unit-converter" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">Digital Storage Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/energy-unit-converter" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">Energy Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/frequency-unit-converter" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Frequency Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/fuel-economy-unit-converter" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Fuel Economy Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/mass-unit-converter" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">Mass Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/angle-unit-converter" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">Plane Angle Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/pressure-unit-converter" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Pressure Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/temperature-unit-converter" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Temperature Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/speed-unit-converter" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Speed Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/time-unit-converter" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Time Unit Converter</a></li>
+                    <li><a href="https://www.alltoolai.com/volume-unit-converter" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Volume Unit Converter</a></li>
                 </ul>
             </div>
         </div>

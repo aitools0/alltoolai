@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Logo and Social Media Section -->
             <div class="space-y-4 text-slate-800 dark:text-slate-300">
                 <a href="https://www.alltoolai.com/" class="flex items-center space-x-2">
-                    <img src="/assets/svg/logo.svg" alt="All Tool AI Logo" class="w-10 h-10">
+                    <img src="/assets/icon/favicon.svg" alt="All Tool AI Logo" class="w-10 h-10">
                     <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">All Tool AI</span>
                 </a>
                 <p class="font-semibold">
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Quick Links</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/index" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
+                    <li><a href="https://www.alltoolai.com/" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
                     <li><a href="/about" class="hover:text-purple-600 dark:hover:text-purple-400">About Us</a></li>
                     <li><a href="/contact" class="hover:text-purple-600 dark:hover:text-purple-400">Contact</a></li>
                     <li><a href="/privacy-policy" class="hover:text-purple-600 dark:hover:text-purple-400">Privacy Policy</a></li>
@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 id="main-tools" class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8 scroll-mt-16">Main Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
-                    <li><a href="/pdf-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
-                    <li><a href="/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
-                    <li><a href="/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
-                    <li><a href="/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
-                    <li><a href="/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
-                    <li><a href="/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
                 </ul>
             </div>
 
@@ -75,21 +75,21 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">PDF Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/text-to-pdf" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Text to PDF</a></li>
-                    <li><a href="/images-to-pdf" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Images to PDF</a></li>
-                    <li><a href="/pdf-to-jpg" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">PDF to JPG</a></li>
-                    <li><a href="/pdf-to-png" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">PDF to PNG</a></li>
-                    <li><a href="/merge-pdf" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">Merge PDF</a></li>
-                    <li><a href="/resize-pdf" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Resize PDF</a></li>
-                    <li><a href="/rotate-pdf-pages" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Rotate PDF Pages</a></li>
-                    <li><a href="/rearrange-pdf-pages" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">Rearrange PDF Pages</a></li>
-                    <li><a href="/pdf-extractor" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">PDF Extractor</a></li>
-                    <li><a href="/pdf-split" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">PDF Split</a></li>
-                    <li><a href="/pdf-pages-delete" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">PDF Page Delete</a></li>
-                    <li><a href="/add-pdf-page-numbers" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Add PDF Page Numbers</a></li>
-                    <li><a href="/watermark-pdf" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Watermark to PDF</a></li>
-                    <li><a href="/pdf-encrypt" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">PDF Encrypt</a></li>
-                    <li><a href="/pdf-decrypt" class="color-link15 hover:text-purple-600 dark:hover:text-purple-400">PDF Decrypt</a></li>
+                    <li><a href="https://www.alltoolai.com/text-to-pdf" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Text to PDF</a></li>
+                    <li><a href="https://www.alltoolai.com/images-to-pdf" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Images to PDF</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-to-jpg" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">PDF to JPG</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-to-png" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">PDF to PNG</a></li>
+                    <li><a href="https://www.alltoolai.com/merge-pdf" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">Merge PDF</a></li>
+                    <li><a href="https://www.alltoolai.com/resize-pdf" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Resize PDF</a></li>
+                    <li><a href="https://www.alltoolai.com/rotate-pdf-pages" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Rotate PDF Pages</a></li>
+                    <li><a href="https://www.alltoolai.com/rearrange-pdf-pages" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">Rearrange PDF Pages</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-extractor" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">PDF Extractor</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-split" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">PDF Split</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-pages-delete" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">PDF Page Delete</a></li>
+                    <li><a href="https://www.alltoolai.com/add-pdf-page-numbers" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Add PDF Page Numbers</a></li>
+                    <li><a href="https://www.alltoolai.com/watermark-pdf" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Watermark to PDF</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-encrypt" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">PDF Encrypt</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-decrypt" class="color-link15 hover:text-purple-600 dark:hover:text-purple-400">PDF Decrypt</a></li>
                 </ul>
             </div>
         </div>

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Logo and Social Media Section -->
             <div class="space-y-4 text-slate-800 dark:text-slate-300">
                 <a href="https://www.alltoolai.com/" class="flex items-center space-x-2">
-                    <img src="/assets/svg/logo.svg" alt="All Tool AI Logo" class="w-10 h-10">
+                    <img src="/assets/icon/favicon.svg" alt="All Tool AI Logo" class="w-10 h-10">
                     <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">All Tool AI</span>
                 </a>
                 <p class="font-semibold">
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Quick Links</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/index" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
+                    <li><a href="https://www.alltoolai.com/" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
                     <li><a href="/about" class="hover:text-purple-600 dark:hover:text-purple-400">About Us</a></li>
                     <li><a href="/contact" class="hover:text-purple-600 dark:hover:text-purple-400">Contact</a></li>
                     <li><a href="/privacy-policy" class="hover:text-purple-600 dark:hover:text-purple-400">Privacy Policy</a></li>
@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 id="main-tools" class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8 scroll-mt-16">Main Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
-                    <li><a href="/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
-                    <li><a href="/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
-                    <li><a href="/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
-                    <li><a href="/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
-                    <li><a href="/qr-generator-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
-                    <li><a href="/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/calculator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/qr-generator-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
                 </ul>
             </div>
 
@@ -75,20 +75,20 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">QR Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/qr-code-scanner" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Qr Code Scanner</a></li>
-                    <li><a href="/wifi-qr-code-generator" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Wifi QR Code Generator</a></li>
-                    <li><a href="/text-qr-code-generator" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Text QR Code Generator</a></li>
-                    <li><a href="/url-qr-code-generator" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">Link QR Code Generator</a></li>
-                    <li><a href="/email-qr-code-generator" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">Email QR Code Generator</a></li>
-                    <li><a href="/phone-qr-code-generator" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">PhoneNumber QR Code Generator</a></li>
-                    <li><a href="/sms-qr-code-generator" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">SMS QR Code Generator</a></li>
-                    <li><a href="/whatsapp-qr-code-generator" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">WhatsApp QR Code Generator</a></li>
-                    <li><a href="/zoom-qr-code-generator" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">Zoom QR Code Generator</a></li>
-                    <li><a href="/skype-qr-code-generator" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Skype QR Code Generator</a></li>
-                    <li><a href="/vcard-qr-code-generator" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Vcard QR Code Generator</a></li>
-                    <li><a href="/event-qr-code-generator" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Event QR Code Generator</a></li>
-                    <li><a href="/bitcoin-qr-code-generator" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">BitCoin QR Code Generator</a></li>
-                    <li><a href="/location-qr-code-generator" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Location QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/qr-code-scanner" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Qr Code Scanner</a></li>
+                    <li><a href="https://www.alltoolai.com/wifi-qr-code-generator" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Wifi QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/text-qr-code-generator" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Text QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/url-qr-code-generator" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">Link QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/email-qr-code-generator" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">Email QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/phone-qr-code-generator" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">PhoneNumber QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/sms-qr-code-generator" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">SMS QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/whatsapp-qr-code-generator" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">WhatsApp QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/zoom-qr-code-generator" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">Zoom QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/skype-qr-code-generator" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Skype QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/vcard-qr-code-generator" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Vcard QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/event-qr-code-generator" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Event QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/bitcoin-qr-code-generator" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">BitCoin QR Code Generator</a></li>
+                    <li><a href="https://www.alltoolai.com/location-qr-code-generator" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Location QR Code Generator</a></li>
                 </ul>
             </div>
         </div>

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Logo and Social Media Section -->
             <div class="space-y-4 text-slate-800 dark:text-slate-300">
                 <a href="https://www.alltoolai.com/" class="flex items-center space-x-2">
-                    <img src="/assets/svg/logo.svg" alt="All Tool AI Logo" class="w-10 h-10">
+                    <img src="/assets/icon/favicon.svg" alt="All Tool AI Logo" class="w-10 h-10">
                     <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">All Tool AI</span>
                 </a>
                 <p class="font-semibold">
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Quick Links</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/index" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
+                    <li><a href="https://www.alltoolai.com/" class="text-indigo-600 dark:text-indigo-400 hover:text-purple-600 dark:hover:text-purple-400 font-bold">Home</a></li>
                     <li><a href="/about" class="hover:text-purple-600 dark:hover:text-purple-400">About Us</a></li>
                     <li><a href="/contact" class="hover:text-purple-600 dark:hover:text-purple-400">Contact</a></li>
                     <li><a href="/privacy-policy" class="hover:text-purple-600 dark:hover:text-purple-400">Privacy Policy</a></li>
@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 id="main-tools" class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8 scroll-mt-16">Main Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
-                    <li><a href="/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
-                    <li><a href="/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
-                    <li><a href="/calculator-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
-                    <li><a href="/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
-                    <li><a href="/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
-                    <li><a href="/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/image-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Image Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/pdf-tools" class="hover:text-purple-600 dark:hover:text-purple-400">PDF Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/text-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Text Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/calculator-tools" class="text-indigo-600 dark:text-indigo-400 font-bold hover:text-purple-600 dark:hover:text-purple-400">Calculator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/unit-converter-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Unit Converter Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/qr-generator-tools" class="hover:text-purple-600 dark:hover:text-purple-400">QR Generator Tools</a></li>
+                    <li><a href="https://www.alltoolai.com/audio-tools" class="hover:text-purple-600 dark:hover:text-purple-400">Audio Tools</a></li>
                 </ul>
             </div>
 
@@ -75,20 +75,20 @@ document.addEventListener("DOMContentLoaded", function() {
             <div>
                 <h2 class="text-indigo-600 dark:text-indigo-400 text-xl font-bold underline mb-4 underline-offset-8">Calculator Tools</h2>
                 <ul class="mt-4 space-y-2 list-disc pl-5 text-slate-800 text-lg font-semibold dark:text-slate-300">
-                    <li><a href="/fertilizer-calculator" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Fertilizer Calculator</a></li>
-                    <li><a href="/age-calculator" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Age Calculator</a></li>
-                    <li><a href="/calorie-calculator" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Calorie Calculator</a></li>
-                    <li><a href="/bmi-calculator" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">BMI Calculator</a></li>
-                    <li><a href="/bmr-calculator" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">BMR Calculator</a></li>
-                    <li><a href="/compound-interest-calculator" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Compound Interest Calculator</a></li>
-                    <li><a href="/loan-calculator" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Loan Calculator</a></li>
-                    <li><a href="/date-calculator" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">Date Calculator</a></li>
-                    <li><a href="/ip-subnet-calculator" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">IP Subnet Calculator</a></li>
-                    <li><a href="/percentage-calculator" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Percentage Calculator</a></li>
-                    <li><a href="/scientific-calculator" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Scientific Calculator</a></li>
-                    <li><a href="/math-equation-solver" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Math Equation Solver</a></li>
-                    <li><a href="/algebra-solver" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Algebra Math Solver</a></li>
-                    <li><a href="/trigonometry-calculator" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Trigonometry Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/fertilizer-calculator" class="color-link1 hover:text-purple-600 dark:hover:text-purple-400">Fertilizer Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/age-calculator" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Age Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/calorie-calculator" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Calorie Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/bmi-calculator" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">BMI Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/bmr-calculator" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">BMR Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/compound-interest-calculator" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Compound Interest Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/loan-calculator" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Loan Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/date-calculator" class="color-link8 hover:text-purple-600 dark:hover:text-purple-400">Date Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/ip-subnet-calculator" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">IP Subnet Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/percentage-calculator" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Percentage Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/scientific-calculator" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Scientific Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/math-equation-solver" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Math Equation Solver</a></li>
+                    <li><a href="https://www.alltoolai.com/algebra-solver" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Algebra Math Solver</a></li>
+                    <li><a href="https://www.alltoolai.com/trigonometry-calculator" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Trigonometry Calculator</a></li>
                 </ul>
             </div>
         </div>
