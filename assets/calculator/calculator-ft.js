@@ -86,8 +86,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="https://www.alltoolai.com/ip-subnet-calculator" class="color-link9 hover:text-purple-600 dark:hover:text-purple-400">IP Subnet Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/percentage-calculator" class="color-link10 hover:text-purple-600 dark:hover:text-purple-400">Percentage Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/scientific-calculator" class="color-link11 hover:text-purple-600 dark:hover:text-purple-400">Scientific Calculator</a></li>
-                    <li><a href="https://www.alltoolai.com/math-equation-solver" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Math Equation Solver</a></li>
-                    <li><a href="https://www.alltoolai.com/algebra-solver" class="color-link13 hover:text-purple-600 dark:hover:text-purple-400">Algebra Math Solver</a></li>
                     <li><a href="https://www.alltoolai.com/trigonometry-calculator" class="color-link14 hover:text-purple-600 dark:hover:text-purple-400">Trigonometry Calculator</a></li>
                 </ul>
             </div>
