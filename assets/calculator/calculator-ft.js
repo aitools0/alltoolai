@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <li><a href="https://www.alltoolai.com/age-calculator" class="color-link2 hover:text-purple-600 dark:hover:text-purple-400">Age Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/calorie-calculator" class="color-link3 hover:text-purple-600 dark:hover:text-purple-400">Calorie Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/bmi-calculator" class="color-link4 hover:text-purple-600 dark:hover:text-purple-400">BMI Calculator</a></li>
+                    <li><a href="https://www.alltoolai.com/army-body-fat-calculator" class="color-link12 hover:text-purple-600 dark:hover:text-purple-400">Army Body Fat Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/bmr-calculator" class="color-link5 hover:text-purple-600 dark:hover:text-purple-400">BMR Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/compound-interest-calculator" class="color-link6 hover:text-purple-600 dark:hover:text-purple-400">Compound Interest Calculator</a></li>
                     <li><a href="https://www.alltoolai.com/loan-calculator" class="color-link7 hover:text-purple-600 dark:hover:text-purple-400">Loan Calculator</a></li>
