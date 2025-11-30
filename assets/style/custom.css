@@ -620,6 +620,9 @@
   .gap-8 {
     gap: 2rem;
   }
+  .gap-x-2 {
+    column-gap: 0.5rem;
+  }
   .gap-x-4 {
     column-gap: 1rem;
   }
