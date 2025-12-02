@@ -536,6 +536,9 @@
   .w-16{
     width: 4rem;
   }
+  .w-24{
+    width: 6rem;
+  }
   .min-w-full { 
     min-width: 100%;
   }
@@ -701,11 +704,17 @@
   .border-b-2 {
     border-bottom-width: 2px;
   }
+  .border-t-4 {
+    border-top-width: 4px;
+  }
   .ring-green-500 {
     --tw-ring-color: rgba(16, 185, 129, var(--tw-ring-opacity));
   }
   .border-indigo-300 {
     border-color: var(--color-indigo-300);
+  }
+  .border-indigo-500 {
+    border-color: var(--color-indigo-500);
   }
   .border-indigo-600 {
     border-color: var(--color-indigo-600);
@@ -816,6 +825,10 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+  .py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
   .py-1\.5 {
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
@@ -840,6 +853,9 @@
   }
   .pt-8 { 
     padding-top: 2rem; 
+  }
+  .pb-2 {
+    padding-bottom: 0.5rem;
   }
   .pb-2\.5 {
     padding-bottom: 0.625rem;
