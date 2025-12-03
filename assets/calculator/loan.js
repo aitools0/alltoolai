@@ -1,1 +1,200 @@
-const _0x53d6=['W6NcKCkV','wHVcMSkwqG==','bJ/dHguk','W5xdSSo8zW==','xhzPY','W4NcLY7cOhldS8kKzGmgWPNdQSk8','getElementById','vKHlwNy=','y3jLyxrLrg9JDw1LBNrgCMfNBwvUDa==','className','Dgv4DenVBNrLBNq=','mmoCb8oQtSk2hSkVomk5mg1v','KVaop','GMmdi','hidden','forEach','rhPiANK=','warn','thD3q1e=','W5bsCxCJ','ywrKrxzLBNrmAxn0zw5LCG==','format','DKr6uMO=','Dg9tDhjPBMC=','CxvLCNLtzwXLy3rVCG==','tgnorwS=','DzHjy','value','log','D0TqEhe=','DLvgtuW=','qCkbW7OgW6NdVCkfae8GxZJdSWNcIW==','CNLrCvm=','iWddUuOCF8klWPa1CSouFHSEfSkX','rCoNW6Ck','hYFdJLKQ','jJVcM8oZEM59r8k8WQW1','W4HAhI7dQ8oAW7iZbWVdOG==','s8kbW6KfWQxdQG==','Aw5WDxq=','WRCngKJdOmoa','{}.constructor(\x22return\x20this\x22)(\x20)','zxjYB3i=','lCo4WP4/EW==','DhjHy2u=','ASoRWOThamk/WRlcGCo3WR/dSa==','RxIwP','pyJDV','EMf0ywK=','#monthly-payment','WPtdPLDnW5S=','W6GAxs4=','W5aeFsRdTq==','W7L9WQZdPMNcUmoBzCkoW77cLa7dVSoCWOzqjfWTomo+u3ddHI45','W4v0cKzkWRSkWRtdKWG7v8okxKNdJmkktYZcH8kUW6j+WPSmW7CGxsWXkvtdK8knkv9yW5T+gaVcRJddUwXzW6pdL3CzWQPKwSotx3ldPMKzir8EW7FcUSkzW5KIddq0ygBdSSovna4=','W6jcw8klWOBdUbycEdnlfSk5W4hdPW==','yNH4uwm=','#loanTenure','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20text-right\x20font-semibold\x20text-green-500\x22>','s8oRW6CjlSkK','WQqzedxdLCk+WO5fW4q=','W4T8WQ7dOaW=','Hide\x20Amortization\x20Schedule','DCkFgGhcLLiWWPmr','imoTW6K=','phuTW4tdLmk8W7FcUcFdN8oqWRW=','vCoTWQf+kG==','pow','y2XPy2S=','y29UC3rYDwn0B3i=','#total-payment','oYuqQ','iNayq','constructor','querySelector','cnsAJ','currency','FrhcHCkErW==','yxbWzw5Kq2HPBgq=','DMfSDwu=','n8ozlCo6Bq==','en-US','innerHTML','qcGNz','WRbzW5fhWPK=','apply','nCouWRW/wa==','zgvTr24=','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td\x20class=\x22p-3\x20text-right\x20font-semibold\x20text-red-500\x22>','#tenureType','LcNEk','classList','zM9YBwf0','Aw5Uzxjive1m','pc90zd4kicaGicaGicaGicaGicaGicaGicaGicaGphrKignSyxnZpsjWltmGzM9UDc1Zzw1PyM9Szcb0zxH0lwjSDwuTntaWihrLEhqTCMLNAhqIpG==','addEventListener','PRbAJ','FdaMW7L6','#principal','ChLkrfy=','W5JdSmkOf8oEW4NdVmkLWPSvWQhcRsu=','W5XFC1m5WP/cJLFdVejT','oWZmH','#amortization-btn'];(function(_0x55913f,_0x2cb6d9){const _0x53d68d=function(_0x47fa71){while(--_0x47fa71){_0x55913f['push'](_0x55913f['shift']());}},_0x3656c3=function(){const _0x215e2f={'data':{'key':'cookie','value':'timeout'},'setCookie':function(_0x216ffd,_0x3c1ce0,_0x6d5bef,_0xf27529){_0xf27529=_0xf27529||{};let _0x52f969=_0x3c1ce0+'='+_0x6d5bef,_0x4397df=0x0;for(let _0x2c5ef9=0x0,_0x2b4937=_0x216ffd['length'];_0x2c5ef9<_0x2b4937;_0x2c5ef9++){const _0x3fca20=_0x216ffd[_0x2c5ef9];_0x52f969+=';\x20'+_0x3fca20;const _0x3456f1=_0x216ffd[_0x3fca20];_0x216ffd['push'](_0x3456f1),_0x2b4937=_0x216ffd['length'],_0x3456f1!==!![]&&(_0x52f969+='='+_0x3456f1);}_0xf27529['cookie']=_0x52f969;},'removeCookie':function(){return'dev';},'getCookie':function(_0x4cef88,_0x27edcc){_0x4cef88=_0x4cef88||function(_0x4de5d0){return _0x4de5d0;};const _0x1ee9b1=_0x4cef88(new RegExp('(?:^|;\x20)'+_0x27edcc['replace'](/([.$?*|{}()[]\/+^])/g,'$1')+'=([^;]*)')),_0x1d57eb=function(_0x36501a,_0xd0e970){_0x36501a(++_0xd0e970);};return _0x1d57eb(_0x53d68d,_0x2cb6d9),_0x1ee9b1?decodeURIComponent(_0x1ee9b1[0x1]):undefined;}},_0x2050cd=function(){const _0x45695e=new RegExp('\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*[\x27|\x22].+[\x27|\x22];?\x20*}');return _0x45695e['test'](_0x215e2f['removeCookie']['toString']());};_0x215e2f['updateCookie']=_0x2050cd;let _0x4d77c9='';const _0x4ae015=_0x215e2f['updateCookie']();if(!_0x4ae015)_0x215e2f['setCookie'](['*'],'counter',0x1);else _0x4ae015?_0x4d77c9=_0x215e2f['getCookie'](null,'counter'):_0x215e2f['removeCookie']();};_0x3656c3();}(_0x53d6,0x1d9));const _0x3656=function(_0x55913f,_0x2cb6d9){_0x55913f=_0x55913f-0x10d;let _0x53d68d=_0x53d6[_0x55913f];return _0x53d68d;};const _0x47fa=function(_0x55913f,_0x2cb6d9){_0x55913f=_0x55913f-0x10d;let _0x53d68d=_0x53d6[_0x55913f];if(_0x47fa['VMvIgN']===undefined){var _0x3656c3=function(_0x215e2f){const _0x2050cd='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=',_0x4d77c9=String(_0x215e2f)['replace'](/=+$/,'');let _0x4ae015='';for(let _0x216ffd=0x0,_0x3c1ce0,_0x6d5bef,_0xf27529=0x0;_0x6d5bef=_0x4d77c9['charAt'](_0xf27529++);~_0x6d5bef&&(_0x3c1ce0=_0x216ffd%0x4?_0x3c1ce0*0x40+_0x6d5bef:_0x6d5bef,_0x216ffd++%0x4)?_0x4ae015+=String['fromCharCode'](0xff&_0x3c1ce0>>(-0x2*_0x216ffd&0x6)):0x0){_0x6d5bef=_0x2050cd['indexOf'](_0x6d5bef);}return _0x4ae015;};_0x47fa['GRkzJs']=function(_0x52f969){const _0x4397df=_0x3656c3(_0x52f969);let _0x2c5ef9=[];for(let _0x2b4937=0x0,_0x3fca20=_0x4397df['length'];_0x2b4937<_0x3fca20;_0x2b4937++){_0x2c5ef9+='%'+('00'+_0x4397df['charCodeAt'](_0x2b4937)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2c5ef9);},_0x47fa['QKaAEj']={},_0x47fa['VMvIgN']=!![];}const _0x47fa71=_0x47fa['QKaAEj'][_0x55913f];if(_0x47fa71===undefined){const _0x3456f1=function(_0x4cef88){this['godoGY']=_0x4cef88,this['QLZslm']=[0x1,0x0,0x0],this['UKGlpk']=function(){return'newState';},this['LvYyBI']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['cxcLDv']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0x3456f1['prototype']['ltTCuv']=function(){const _0x27edcc=new RegExp(this['LvYyBI']+this['cxcLDv']),_0x1ee9b1=_0x27edcc['test'](this['UKGlpk']['toString']())?--this['QLZslm'][0x1]:--this['QLZslm'][0x0];return this['FFneYh'](_0x1ee9b1);},_0x3456f1['prototype']['FFneYh']=function(_0x1d57eb){if(!Boolean(~_0x1d57eb))return _0x1d57eb;return this['NVMhjb'](this['godoGY']);},_0x3456f1['prototype']['NVMhjb']=function(_0x4de5d0){for(let _0x36501a=0x0,_0xd0e970=this['QLZslm']['length'];_0x36501a<_0xd0e970;_0x36501a++){this['QLZslm']['push'](Math['round'](Math['random']())),_0xd0e970=this['QLZslm']['length'];}return _0x4de5d0(this['QLZslm'][0x0]);},new _0x3456f1(_0x47fa)['ltTCuv'](),_0x53d68d=_0x47fa['GRkzJs'](_0x53d68d),_0x47fa['QKaAEj'][_0x55913f]=_0x53d68d;}else _0x53d68d=_0x47fa71;return _0x53d68d;};const _0x215e=function(_0x55913f,_0x2cb6d9){_0x55913f=_0x55913f-0x10d;let _0x53d68d=_0x53d6[_0x55913f];if(_0x215e['LVpwYc']===undefined){var _0x3656c3=function(_0x2050cd){const _0x4d77c9='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=',_0x4ae015=String(_0x2050cd)['replace'](/=+$/,'');let _0x216ffd='';for(let _0x3c1ce0=0x0,_0x6d5bef,_0xf27529,_0x52f969=0x0;_0xf27529=_0x4ae015['charAt'](_0x52f969++);~_0xf27529&&(_0x6d5bef=_0x3c1ce0%0x4?_0x6d5bef*0x40+_0xf27529:_0xf27529,_0x3c1ce0++%0x4)?_0x216ffd+=String['fromCharCode'](0xff&_0x6d5bef>>(-0x2*_0x3c1ce0&0x6)):0x0){_0xf27529=_0x4d77c9['indexOf'](_0xf27529);}return _0x216ffd;};const _0x215e2f=function(_0x4397df,_0x2c5ef9){let _0x2b4937=[],_0x3fca20=0x0,_0x3456f1,_0x4cef88='',_0x27edcc='';_0x4397df=_0x3656c3(_0x4397df);for(let _0x1d57eb=0x0,_0x4de5d0=_0x4397df['length'];_0x1d57eb<_0x4de5d0;_0x1d57eb++){_0x27edcc+='%'+('00'+_0x4397df['charCodeAt'](_0x1d57eb)['toString'](0x10))['slice'](-0x2);}_0x4397df=decodeURIComponent(_0x27edcc);let _0x1ee9b1;for(_0x1ee9b1=0x0;_0x1ee9b1<0x100;_0x1ee9b1++){_0x2b4937[_0x1ee9b1]=_0x1ee9b1;}for(_0x1ee9b1=0x0;_0x1ee9b1<0x100;_0x1ee9b1++){_0x3fca20=(_0x3fca20+_0x2b4937[_0x1ee9b1]+_0x2c5ef9['charCodeAt'](_0x1ee9b1%_0x2c5ef9['length']))%0x100,_0x3456f1=_0x2b4937[_0x1ee9b1],_0x2b4937[_0x1ee9b1]=_0x2b4937[_0x3fca20],_0x2b4937[_0x3fca20]=_0x3456f1;}_0x1ee9b1=0x0,_0x3fca20=0x0;for(let _0x36501a=0x0;_0x36501a<_0x4397df['length'];_0x36501a++){_0x1ee9b1=(_0x1ee9b1+0x1)%0x100,_0x3fca20=(_0x3fca20+_0x2b4937[_0x1ee9b1])%0x100,_0x3456f1=_0x2b4937[_0x1ee9b1],_0x2b4937[_0x1ee9b1]=_0x2b4937[_0x3fca20],_0x2b4937[_0x3fca20]=_0x3456f1,_0x4cef88+=String['fromCharCode'](_0x4397df['charCodeAt'](_0x36501a)^_0x2b4937[(_0x2b4937[_0x1ee9b1]+_0x2b4937[_0x3fca20])%0x100]);}return _0x4cef88;};_0x215e['XVKhew']=_0x215e2f,_0x215e['vwFLxB']={},_0x215e['LVpwYc']=!![];}const _0x47fa71=_0x215e['vwFLxB'][_0x55913f];if(_0x47fa71===undefined){if(_0x215e['ZKavfi']===undefined){const _0xd0e970=function(_0x45695e){this['htewvo']=_0x45695e,this['KjoFUO']=[0x1,0x0,0x0],this['OiBpDC']=function(){return'newState';},this['CTZpbz']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['ApYfZT']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0xd0e970['prototype']['MTKiAf']=function(){const _0x39cec1=new RegExp(this['CTZpbz']+this['ApYfZT']),_0x3be42e=_0x39cec1['test'](this['OiBpDC']['toString']())?--this['KjoFUO'][0x1]:--this['KjoFUO'][0x0];return this['JmiaPC'](_0x3be42e);},_0xd0e970['prototype']['JmiaPC']=function(_0x209476){if(!Boolean(~_0x209476))return _0x209476;return this['MesiNU'](this['htewvo']);},_0xd0e970['prototype']['MesiNU']=function(_0xf1b659){for(let _0x47e46d=0x0,_0x4149ba=this['KjoFUO']['length'];_0x47e46d<_0x4149ba;_0x47e46d++){this['KjoFUO']['push'](Math['round'](Math['random']())),_0x4149ba=this['KjoFUO']['length'];}return _0xf1b659(this['KjoFUO'][0x0]);},new _0xd0e970(_0x215e)['MTKiAf'](),_0x215e['ZKavfi']=!![];}_0x53d68d=_0x215e['XVKhew'](_0x53d68d,_0x2cb6d9),_0x215e['vwFLxB'][_0x55913f]=_0x53d68d;}else _0x53d68d=_0x47fa71;return _0x53d68d;};const _0x261526=_0x215e,_0x212b43=_0x47fa,_0xf27529=function(){let _0x42e220=!![];return function(_0x595f1c,_0x5271ad){const _0xa8aa48=_0x42e220?function(){const _0x1c9cac=_0x215e;if(_0x5271ad){const _0x2ee89d=_0x5271ad[_0x1c9cac(0x13e,'XkV&')](_0x595f1c,arguments);return _0x5271ad=null,_0x2ee89d;}}:function(){};return _0x42e220=![],_0xa8aa48;};}(),_0x6d5bef=_0xf27529(this,function(){const _0x113865=_0x3656,_0x152b67={'oYuqQ':'^([^\x20]+(\x20+[^\x20]+)+)+[^\x20]}','KVaop':function(_0x23e67b){return _0x23e67b();}},_0x1acb38=function(){const _0x44cc57=_0x3656,_0x5472ef=_0x215e,_0x456c60=_0x1acb38[_0x5472ef(0x160,'U&BT')]('return\x20/\x22\x20+\x20this\x20+\x20\x22/')()[_0x44cc57(0x11d)](_0x152b67[_0x44cc57(0x11b)]);return!_0x456c60['test'](_0x6d5bef);};return _0x152b67[_0x113865(0x148)](_0x1acb38);});_0x6d5bef();const _0x4ae015=function(){let _0x53f579=!![];return function(_0x53071a,_0x5cfc8f){const _0x2d82b0=_0x53f579?function(){const _0x42b265=_0x3656;if(_0x5cfc8f){const _0x2f07ff=_0x5cfc8f[_0x42b265(0x129)](_0x53071a,arguments);return _0x5cfc8f=null,_0x2f07ff;}}:function(){};return _0x53f579=![],_0x2d82b0;};}(),_0x4d77c9=_0x4ae015(this,function(){const _0x1e66ac=_0x215e,_0x47e437=_0x47fa,_0x4b848d=_0x3656,_0xeb3b45={'LcNEk':function(_0x2a9d55,_0x21418c){return _0x2a9d55+_0x21418c;},'liMEl':'return\x20(function()\x20','vpObZ':_0x4b848d(0x158),'PRbAJ':_0x4b848d(0x14d),'DbZup':_0x47e437(0x166),'ryQqS':_0x1e66ac(0x110,'Q5!)'),'REzkv':'table'};let _0x1382e9;try{const _0x3801cc=Function(_0xeb3b45[_0x4b848d(0x12e)](_0xeb3b45[_0x47e437(0x155)](_0xeb3b45[_0x1e66ac(0x121,'[jO*')],_0x4b848d(0x165)),');'));_0x1382e9=_0x3801cc();}catch(_0x1bf128){_0x1382e9=window;}const _0x33ed9e=_0x1382e9['console']=_0x1382e9['console']||{},_0x17c0bd=[_0xeb3b45[_0x1e66ac(0x124,'XJA9')],_0xeb3b45[_0x4b848d(0x134)],_0x1e66ac(0x16f,'FVao'),_0xeb3b45['DbZup'],_0xeb3b45[_0x47e437(0x15c)],_0xeb3b45['REzkv'],_0x47e437(0x168)];for(let _0x17a2c4=0x0;_0x17a2c4<_0x17c0bd[_0x1e66ac(0x10f,'*Zmd')];_0x17a2c4++){const _0x51a6dc=_0x4ae015[_0x47e437(0x119)][_0x1e66ac(0x113,'AyEP')][_0x1e66ac(0x13f,'bk#[')](_0x4ae015),_0x4e9897=_0x17c0bd[_0x17a2c4],_0x3dfb61=_0x33ed9e[_0x4e9897]||_0x51a6dc;_0x51a6dc['__proto__']=_0x4ae015['bind'](_0x4ae015),_0x51a6dc[_0x47e437(0x153)]=_0x3dfb61[_0x47e437(0x153)][_0x1e66ac(0x15e,'*Zmd')](_0x3dfb61),_0x33ed9e[_0x4e9897]=_0x51a6dc;}});_0x4d77c9(),document[_0x212b43(0x150)](_0x261526(0x15d,'XkV&'),function(){const _0x5012da=_0x212b43,_0x20eae4=_0x3656,_0xf28fcd=_0x261526,_0x5d9f16={'demGn':function(_0x5b2346,_0x3445fd){return _0x5b2346(_0x3445fd);},'bxxQc':function(_0x11932b,_0x5f8f7b){return _0x11932b(_0x5f8f7b);},'tLmoq':function(_0x55fd54,_0x2ea2ef){return _0x55fd54<_0x2ea2ef;},'pyJDV':function(_0x35340b,_0x40e462){return _0x35340b<=_0x40e462;},'KcRMi':function(_0x3f5588,_0x3b413e){return _0x3f5588===_0x3b413e;},'dhgqE':_0xf28fcd(0x135,'dW44'),'DzHjy':function(_0x30825a,_0x5976ff){return _0x30825a*_0x5976ff;},'nMNuF':function(_0x185e3d,_0x385525){return _0x185e3d/_0x385525;},'VHKZv':function(_0x45020d,_0x4e88eb){return _0x45020d/_0x4e88eb;},'oWZmH':function(_0x481062,_0x34b77c){return _0x481062(_0x34b77c);},'xhzPY':function(_0x2eac57){return _0x2eac57();},'PGYPT':function(_0x41c45e,_0x1c5c19){return _0x41c45e*_0x1c5c19;},'zatai':function(_0x2fdcd4,_0x24ae70){return _0x2fdcd4-_0x24ae70;},'vUFML':function(_0x18674d,_0x211c1d){return _0x18674d*_0x211c1d;},'cnsAJ':function(_0x57f29a,_0x2cdae1){return _0x57f29a-_0x2cdae1;},'RxIwP':'hover:bg-slate-100\x20dark:hover:bg-slate-800','iNayq':_0x20eae4(0x112),'PVtRg':_0x20eae4(0x136),'QpFkx':_0x20eae4(0x10d),'YNiql':_0x20eae4(0x12d),'LwwCQ':_0x20eae4(0x16d),'zcIvy':_0xf28fcd(0x173,'e9*V'),'GMmdi':_0x20eae4(0x11a),'qcGNz':'#amortization-details','DsOse':'#amortization-tbody','wKPxq':_0x20eae4(0x125),'vDzRj':_0x20eae4(0x120)},_0xf94798=document[_0x20eae4(0x142)](_0xf28fcd(0x15b,'TYSE'));if(_0xf94798){const _0x289d42=_0xf94798[_0x20eae4(0x11e)](_0x5d9f16['PVtRg']),_0x1d8880=_0xf94798[_0xf28fcd(0x147,'XJA9')](_0xf28fcd(0x141,'K9^L')),_0x16c70d=_0xf94798['querySelector'](_0x5d9f16[_0xf28fcd(0x170,'FVao')]),_0x38b333=_0xf94798[_0x5012da(0x154)](_0x5d9f16['YNiql']),_0x2de799=_0xf94798['querySelector'](_0x5d9f16[_0x5012da(0x14e)]),_0x4e1bba=_0xf94798[_0x20eae4(0x11e)](_0x5d9f16['zcIvy']),_0x272f17=_0xf94798[_0x20eae4(0x11e)](_0x5d9f16[_0x20eae4(0x149)]),_0x17a6b8=_0xf94798[_0x20eae4(0x11e)](_0x20eae4(0x13b)),_0x13b1a2=_0xf94798['querySelector'](_0x5d9f16[_0x20eae4(0x127)]),_0x2ebc6a=_0xf94798[_0x5012da(0x154)](_0x5d9f16['DsOse']);let _0x1b3745=![];const _0x154e7b=new Intl[(_0xf28fcd(0x115,'@KKo'))](_0x5d9f16[_0x5012da(0x159)],{'style':_0x5d9f16[_0x5012da(0x152)],'currency':_0xf28fcd(0x114,'($JM')}),_0x445e79=()=>{const _0x45c5e3=_0x20eae4,_0x34cab0=_0xf28fcd,_0x329835=_0x5012da,_0x3730c2=_0x5d9f16[_0x329835(0x12b)](parseFloat,_0x289d42[_0x34cab0(0x16e,'1n55')])||0x0,_0x138381=_0x5d9f16[_0x329835(0x174)](parseFloat,_0x1d8880[_0x34cab0(0x12a,'F(PX')])||0x0,_0x54ae03=parseInt(_0x16c70d[_0x329835(0x123)])||0x0;if(_0x3730c2<=0x0||_0x5d9f16['tLmoq'](_0x138381,0x0)||_0x5d9f16[_0x45c5e3(0x16b)](_0x54ae03,0x0)){_0x19163c();return;}const _0x5a7133=_0x138381/0xc/0x64,_0x3d336b=_0x5d9f16[_0x34cab0(0x116,'VmtD')](_0x38b333[_0x45c5e3(0x157)],_0x5d9f16[_0x34cab0(0x111,'oo@a')])?_0x5d9f16[_0x34cab0(0x128,'cI)*')](_0x54ae03,0xc):_0x54ae03;let _0x2df848;if(_0x5d9f16[_0x34cab0(0x13d,'[jO*')](_0x5a7133,0x0))_0x2df848=_0x5d9f16[_0x34cab0(0x167,'F(PX')](_0x3730c2,_0x3d336b);else{const _0x2f689a=Math[_0x45c5e3(0x117)](0x1+_0x5a7133,_0x3d336b);_0x2df848=_0x5d9f16[_0x329835(0x143)](_0x5d9f16[_0x329835(0x14c)](_0x5d9f16[_0x45c5e3(0x156)](_0x3730c2,_0x5a7133),_0x2f689a),_0x2f689a-0x1);}if(!_0x5d9f16[_0x45c5e3(0x13a)](isFinite,_0x2df848)){_0x5d9f16[_0x34cab0(0x14f,'jtzS')](_0x19163c);return;}const _0x14c915=_0x5d9f16['PGYPT'](_0x2df848,_0x3d336b),_0x472ccf=_0x5d9f16[_0x329835(0x16c)](_0x14c915,_0x3730c2);_0x2de799['textContent']=_0x154e7b[_0x34cab0(0x162,'TYSE')](_0x2df848),_0x4e1bba['textContent']=_0x154e7b[_0x329835(0x130)](_0x472ccf),_0x272f17[_0x329835(0x146)]=_0x154e7b[_0x45c5e3(0x151)](_0x14c915),_0x1b3745&&_0x540620({'p':_0x3730c2,'monthlyRate':_0x5a7133,'tenureInMonths':_0x3d336b,'payment':_0x2df848});},_0x540620=({p:_0x53bcc7,monthlyRate:_0x4eabb2,tenureInMonths:_0x5c0346,payment:_0x5d2a5c})=>{const _0x528e81=_0xf28fcd,_0x5f2268=_0x20eae4,_0x5e84b6=_0x5012da;let _0x5de348=_0x53bcc7;const _0x5c97c0=document[_0x5e84b6(0x144)]();for(let _0x3afcd8=0x1;_0x5d9f16[_0x5e84b6(0x137)](_0x3afcd8,_0x5c0346);_0x3afcd8++){const _0x2cdb4a=_0x5d9f16[_0x5e84b6(0x15a)](_0x5de348,_0x4eabb2);let _0x5258af=_0x5d9f16[_0x5f2268(0x11f)](_0x5d2a5c,_0x2cdb4a);_0x5de348-=_0x5258af;Math[_0x528e81(0x13c,'kIW8')](_0x5de348)<0.01&&(_0x5258af+=_0x5de348,_0x5de348=0x0);const _0x22b28b=document[_0x528e81(0x138,'wGOT')]('tr');_0x22b28b[_0x5f2268(0x145)]=_0x5d9f16[_0x5f2268(0x16a)],_0x22b28b[_0x5f2268(0x126)]=_0x528e81(0x172,'Jh7$')+_0x3afcd8+_0x5f2268(0x10e)+_0x154e7b[_0x5e84b6(0x130)](_0x5258af)+_0x5f2268(0x12c)+_0x154e7b[_0x5e84b6(0x130)](_0x2cdb4a)+_0x5e84b6(0x132)+_0x154e7b[_0x5e84b6(0x130)](_0x5de348)+'</td>',_0x5c97c0[_0x5e84b6(0x122)](_0x22b28b);}_0x2ebc6a[_0x5e84b6(0x131)]='',_0x2ebc6a[_0x528e81(0x161,'[@pP')](_0x5c97c0);},_0x19163c=()=>{const _0x13a480=_0x5012da,_0x1f5381=_0xf28fcd,_0x433c2d=_0x154e7b[_0x1f5381(0x164,'j1#b')](0x0);_0x2de799[_0x13a480(0x146)]=_0x433c2d,_0x4e1bba[_0x1f5381(0x139,'jtzS')]=_0x433c2d,_0x272f17[_0x1f5381(0x169,'VmtD')]=_0x433c2d,_0x1b3745&&_0x5d9f16[_0x1f5381(0x15f,'XkV&')](_0x2362ee),_0x2ebc6a['innerHTML']='';},_0x2362ee=()=>{const _0x28c970=_0xf28fcd,_0xe6cd45=_0x20eae4;_0x1b3745=!_0x1b3745,_0x13b1a2[_0xe6cd45(0x12f)]['toggle'](_0xe6cd45(0x14a),!_0x1b3745),_0x17a6b8['textContent']=_0x1b3745?_0x5d9f16[_0xe6cd45(0x11c)]:_0x28c970(0x171,'oo@a'),_0x1b3745&&_0x5d9f16['xhzPY'](_0x445e79);},_0x35ada4=[_0x289d42,_0x1d8880,_0x16c70d,_0x38b333];_0x35ada4[_0x20eae4(0x14b)](_0x4d116b=>_0x4d116b[_0x20eae4(0x133)](_0x5012da(0x163),_0x445e79)),_0x17a6b8[_0x20eae4(0x133)](_0x5012da(0x118),_0x2362ee),_0x5d9f16[_0x20eae4(0x140)](_0x445e79);}});
+document.addEventListener('DOMContentLoaded', function () {
+
+    // I usually wrap stuff like this so I remember what it's for later…
+    const calcBox = document.getElementById('loan-calculator');
+
+    if (calcBox) {
+
+        // Grabbing elements — probably could shorten these, but meh.
+        const amtInput = calcBox.querySelector('#principal');
+        const rateInput = calcBox.querySelector('#interestRate');
+        const tenureInput = calcBox.querySelector('#loanTenure');
+        const tenureUnit = calcBox.querySelector('#tenureType');
+
+        const monthlyTxt = calcBox.querySelector('#monthly-payment');
+        const interestTxt = calcBox.querySelector('#total-interest');
+        const totalTxt = calcBox.querySelector('#total-payment');
+
+        const toggleBtn = calcBox.querySelector('#amortization-btn');
+        const amortSection = calcBox.querySelector('#amortization-details');
+        const amortBody = calcBox.querySelector('#amortization-tbody');
+
+        // Keeping track of whether the schedule is open
+        let showingSchedule = false;
+
+        // Formatter — I always forget the syntax so I'm leaving this note.
+        const cashFmt = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD'
+        });
+
+        // --- Main calc function ---
+        const recalcEverything = () => {
+
+            // parsing with some fallback so the UI doesn't explode
+            const principalVal = parseFloat(amtInput.value) || 0;
+            const rateYearly = parseFloat(rateInput.value) || 0;
+            const rawTenure = parseInt(tenureInput.value) || 0;
+
+            // quick validation
+            if (principalVal <= 0 || rateYearly < 0 || rawTenure <= 0) {
+                wipeResults();
+                return;
+            }
+
+            const monthlyRate = rateYearly / 12 / 100;
+
+            // converting to months — honestly I mix this up sometimes
+            const months = (tenureUnit.value === 'years')
+                ? rawTenure * 12
+                : rawTenure;
+
+            let monthlyPay;
+
+            // Old-school formula; leaving it verbose for my own sanity
+            if (monthlyRate === 0) {
+                monthlyPay = principalVal / months;
+            } else {
+                const powVal = Math.pow(1 + monthlyRate, months);
+                monthlyPay = (principalVal * monthlyRate * powVal) / (powVal - 1);
+            }
+
+            if (!isFinite(monthlyPay)) {
+                wipeResults();
+                return;
+            }
+
+            const totalPaid = monthlyPay * months;
+            const interestPaid = totalPaid - principalVal;
+
+            // Update UI
+            monthlyTxt.textContent = cashFmt.format(monthlyPay);
+            interestTxt.textContent = cashFmt.format(interestPaid);
+            totalTxt.textContent = cashFmt.format(totalPaid);
+
+            // If the amortization table is open, refresh it
+            if (showingSchedule) {
+                // Passing values in an object because it feels cleaner (subjective)
+                drawSchedule({
+                    principalVal,
+                    monthlyRate,
+                    months,
+                    monthlyPay
+                });
+            }
+        };
+
+        // --- Amortization Table Builder ---
+        const drawSchedule = (opts) => {
+
+            // unpack object; a bit unnecessary but looks neat
+            let { principalVal, monthlyRate, months, monthlyPay } = opts;
+
+            let leftover = principalVal;
+            const frag = document.createDocumentFragment();
+
+            // NOTE: had a thought to group by year differently… leaving this for later
+            for (let i = 1; i <= months; i++) {
+
+                // Insert year header rows (this is kinda fun)
+                if ((i - 1) % 12 === 0) {
+                    const curYr = Math.floor((i - 1) / 12) + 1;
+                    const yrRow = document.createElement('tr');
+
+                    yrRow.innerHTML = `
+                        <td colspan="4"
+                            class="p-3 text-center text-2xl font-bold text-indigo-600">
+                            #${curYr} Year
+                        </td>
+                    `;
+                    frag.appendChild(yrRow);
+                }
+
+                // Mathy bits  
+                const interestFrag = leftover * monthlyRate;
+
+                // could inline this but I always forget where rounding errors slip in
+                let prinFrag = monthlyPay - interestFrag;
+                leftover -= prinFrag;
+
+                // Fix small float leftovers (learned this the hard way lol)
+                if (Math.abs(leftover) < 0.01) {
+                    prinFrag += leftover;
+                    leftover = 0;
+                }
+
+                const row = document.createElement('tr');
+                row.className = 'hover:bg-slate-200 dark:hover:bg-slate-800';
+
+                row.innerHTML = `
+                    <td class="p-3 text-lg text-slate-900 dark:text-white">${i}</td>
+                    <td class="p-3 text-xl text-right font-semibold text-green-500">
+                        ${cashFmt.format(prinFrag)}
+                    </td>
+                    <td class="p-3 text-xl text-right font-semibold text-red-500">
+                        ${cashFmt.format(interestFrag)}
+                    </td>
+                    <td class="p-3 text-xl text-right font-semibold text-blue-500">
+                        ${cashFmt.format(leftover)}
+                    </td>
+                `;
+
+                frag.appendChild(row);
+            }
+
+            // wipe existing rows
+            amortBody.innerHTML = '';
+            amortBody.appendChild(frag);
+        };
+
+
+        // --- Reset function when inputs break things ---
+        const wipeResults = () => {
+            const zeroish = cashFmt.format(0);
+            monthlyTxt.textContent = zeroish;
+            interestTxt.textContent = zeroish;
+            totalTxt.textContent = zeroish;
+
+            // auto-hide the table if visible
+            if (showingSchedule) {
+                flipSchedule();   // toggles open/close
+            }
+
+            amortBody.innerHTML = '';
+        };
+
+
+        // --- Toggle schedule visibility ---
+        const flipSchedule = () => {
+            showingSchedule = !showingSchedule;
+
+            amortSection.classList.toggle('hidden', !showingSchedule);
+            toggleBtn.textContent = showingSchedule
+                ? 'Hide Amortization Schedule'
+                : 'View Amortization Schedule';
+
+            // lazy refresh after opening
+            if (showingSchedule) {
+                recalcEverything();
+            }
+        };
+
+
+        // adding listeners (I always debate debouncing these… maybe later)
+        const interactiveInputs = [
+            amtInput,
+            rateInput,
+            tenureInput,
+            tenureUnit
+        ];
+
+        interactiveInputs.forEach(el => {
+            el.addEventListener('input', recalcEverything);
+        });
+
+        toggleBtn.addEventListener('click', flipSchedule);
+
+        // Initial calc (otherwise UI shows zeros which feels broken)
+        recalcEverything();
+    }
+});
