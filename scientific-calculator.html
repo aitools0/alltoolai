@@ -147,16 +147,21 @@
   <meta name="apple-mobile-web-app-title" content="All Tool Ai" />
   <link rel="manifest" href="/assets/icon/site.webmanifest" />
 
-  <!-- Fonts & Styles -->
+  <!-- Preconnect for Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Non-blocking load for your Tailwind build -->
   <link rel="preload" href="/assets/style/style.css" as="style" />
   <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
   <link rel="stylesheet" href="/assets/style/style.css" />
-    
+
+  <!-- Pre-connect for JS -->
   <script src="/assets/js/header.js" defer></script>
   <script src="/assets/calculator/calculator-ft.js" defer></script>
   <script src="/assets/js/main.js" defer></script>
@@ -542,12 +547,16 @@
             </div>
 
             <aside class="hidden lg:flex flex-col">
+              <div id="sidead-0"></div>
+              <div id="sidead-0"></div>
               <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
               <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
               <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
             </aside>
 
             <aside class="hidden lg:flex flex-col">
+              <div id="sidead-0"></div>
+              <div id="sidead-0"></div>
               <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
               <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
               <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
@@ -567,16 +576,13 @@
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/calorie-calculator">Calorie Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmi-calculator">BMI Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/army-body-fat-calculator">Army Body Fat Calculator</a>,
-              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmr-calculator">BMR Calculator</a>,
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/bmr-tdee-macro-calculator">BMR, TDEE & Macro Calculator Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/compound-interest-calculator">Compound Interest Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/loan-calculator">Loan Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/date-calculator">Date Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/ip-subnet-calculator">IP Subnet Calculator</a>,
               <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/percentage-calculator">Percentage Calculator</a>,
-              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/scientific-calculator">Scientific Calculator</a>,
-              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/math-equation-solver">Math Equation Solver</a>,
-              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/algebra-solver">Algebra Solver</a>,
-              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/trigonometry-calculator">Trigonometry Calculator</a>.
+              <a class="text-indigo-600 dark:text-indigo-400 hover:underline" href="https://www.alltoolai.com/scientific-calculator">Scientific Calculator</a>.
            </p>
         </section>
 
