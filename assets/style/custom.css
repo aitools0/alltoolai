@@ -334,6 +334,9 @@
   .fixed {
     position: fixed;
   }
+  .resize-y {
+    resize: vertical;
+  }
   .inset-0 {
     top: 0;
     right: 0;
@@ -811,6 +814,9 @@
   }
   .p-4 {
     padding: 1rem;
+  }
+  .p-5 {
+    padding: 1.25rem;
   }
   .p-6 {
     padding: 1.5rem;
