@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <!-- Logo and Social Media Section -->
             <div class="space-y-4 text-slate-800 dark:text-slate-300">
                 <a href="https://www.alltoolai.com/" class="flex items-center space-x-2">
-                    <img src="/assets/icon/favicon.svg" alt="All Tool AI Logo" class="w-10 h-10">
+                    <img src="/assets/svg/logo.svg" alt="All Tool AI Logo" class="w-10 h-10">
                     <span class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">All Tool AI</span>
                 </a>
                 <p class="font-semibold">
